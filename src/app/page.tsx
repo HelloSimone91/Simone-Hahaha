@@ -169,7 +169,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row w-full min-h-screen">
 
             {/* Left Side */}
-            <div className="w-full lg:w-[45%] lg:border-r-[3px] border-stone-900 p-6 lg:p-16 xl:p-24 flex flex-col gap-6 sticky top-0 lg:h-screen justify-start">
+            <div className="w-full lg:w-[45%] lg:border-r-[3px] border-stone-900 p-6 lg:p-16 xl:p-24 flex flex-col gap-6 lg:sticky lg:top-0 lg:h-screen justify-start">
               <span className="text-sm font-black tracking-widest uppercase text-stone-900">ABOUT ME</span>
               <h2 className="text-[4rem] sm:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-bold tracking-tighter leading-[0.85] text-stone-900 uppercase">
                 HUMAN<br/>FIRST.<br/>
