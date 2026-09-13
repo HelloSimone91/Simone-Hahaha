@@ -146,7 +146,7 @@ export default function Home() {
                   <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">play</span>
                   <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">imagine</span>
                 </div>
-                <a href="#ideas" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
+                <a href="/ideas" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
                   Visit the project ↗
                 </a>
               </div>
