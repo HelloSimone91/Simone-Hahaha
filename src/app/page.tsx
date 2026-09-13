@@ -33,7 +33,7 @@ export default function Home() {
           </div>
 
           <div className="flex whitespace-nowrap overflow-hidden items-center group cursor-default">
-            <div className="animate-[marquee_20s_linear_infinite] flex items-center text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider uppercase group-hover:[animation-play-state:paused]">
+            <div className="animate-marquee flex items-center text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider uppercase group-hover:[animation-play-state:paused]">
               <span className="mx-4">listen</span> <span className="text-brand-pink">✷</span>
               <span className="mx-4">build</span> <span className="text-brand-green">✷</span>
               <span className="mx-4">notice</span> <span className="text-brand-blue">✷</span>
