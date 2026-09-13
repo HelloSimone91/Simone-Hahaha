@@ -52,7 +52,7 @@ export default function Home() {
         </section>
 
         {/* WORK SECTION */}
-        <section id="work" className="px-6 py-24 sm:py-32 max-w-5xl mx-auto w-full">
+        <section id="work" className="px-6 py-24 sm:py-32 max-w-[1400px] mx-auto w-full">
           <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start mb-16">
             <span className="text-sm font-medium tracking-wide uppercase text-stone-500 whitespace-nowrap pt-2">
               Current work / always becoming
@@ -62,95 +62,87 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-12 sm:gap-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Project 1 */}
-            <article className="flex flex-col md:flex-row gap-8 items-start group">
-              <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-green font-mono font-bold text-lg">01</span>
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
+              <div className="w-full flex flex-col gap-2">
+                <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
               </div>
-              <div className="md:w-2/3 flex flex-col gap-6">
-                <h3 className="text-3xl sm:text-4xl font-bold">Values in the Wild</h3>
+              <div className="w-full flex flex-col gap-6 flex-1">
+                <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Values in the Wild</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
                   A growing body of work about turning values from lofty nouns into observable verbs — and using that practice to build clarity, empathy, and connection.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">notice</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">name</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">practice</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">notice</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">name</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">practice</span>
                 </div>
-                <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
-                  Visit the project ↗
-                </a>
+
               </div>
-            </article>
+            </a>
 
             {/* Project 2 */}
-            <article className="flex flex-col md:flex-row gap-8 items-start group">
-              <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-pink font-mono font-bold text-lg">02</span>
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
+              <div className="w-full flex flex-col gap-2">
+                <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
               </div>
-              <div className="md:w-2/3 flex flex-col gap-6">
-                <h3 className="text-3xl sm:text-4xl font-bold">Howdy Human</h3>
+              <div className="w-full flex flex-col gap-6 flex-1">
+                <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Howdy Human</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
                   A home for human-centered experiments: making life more intentional, more livable, and a little less weird to navigate alone.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">question</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">make</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">connect</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">question</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">make</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">connect</span>
                 </div>
-                <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
-                  Visit the project ↗
-                </a>
+
               </div>
-            </article>
+            </a>
 
             {/* Project 3 */}
-            <article className="flex flex-col md:flex-row gap-8 items-start group">
-              <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-blue font-mono font-bold text-lg">03</span>
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
+              <div className="w-full flex flex-col gap-2">
+                <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
               </div>
-              <div className="md:w-2/3 flex flex-col gap-6">
-                <h3 className="text-3xl sm:text-4xl font-bold">Things Get Weird</h3>
+              <div className="w-full flex flex-col gap-6 flex-1">
+                <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Things Get Weird</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
                   A place for the strange turns, honest questions, and unexpected connections that show up when we pay attention to being human.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">wonder</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">listen</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">laugh</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">wonder</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">listen</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">laugh</span>
                 </div>
-                <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
-                  Visit the project ↗
-                </a>
+
               </div>
-            </article>
+            </a>
 
             {/* Project 4 */}
-            <article id="ideas" className="flex flex-col md:flex-row gap-8 items-start group">
-              <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-yellow font-mono font-bold text-lg">04+</span>
+            <a href="/ideas" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+              <div className="w-full flex flex-col gap-2">
+                <span className="text-stone-900 font-mono font-bold text-lg">04+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / art / unfinished things</span>
               </div>
-              <div className="md:w-2/3 flex flex-col gap-6">
-                <h3 className="text-3xl sm:text-4xl font-bold">Idea Corner</h3>
+              <div className="w-full flex flex-col gap-6 flex-1">
+                <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Idea Corner</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
                   A living shelf for ideas I’m exploring, projects that are still simmering, and art I want to keep where I can see it.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">collect</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">play</span>
-                  <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-semibold uppercase tracking-wider">imagine</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">collect</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">play</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">imagine</span>
                 </div>
-                <a href="/ideas" className="inline-flex items-center gap-2 font-bold hover:text-stone-500 transition-colors w-max mt-2">
-                  Visit the project ↗
-                </a>
+
               </div>
-            </article>
+            </a>
 
           </div>
         </section>
@@ -173,62 +165,75 @@ export default function Home() {
         </section>
 
         {/* ABOUT SECTION */}
-        <section id="about" className="px-6 py-24 sm:py-32 max-w-5xl mx-auto w-full">
-          <div className="flex flex-col sm:flex-row gap-12 sm:gap-24 items-start">
+        <section id="about" className="bg-brand-pink border-t-[3px] border-stone-900 w-full relative">
+          <div className="flex flex-col lg:flex-row w-full min-h-screen">
 
-            <div className="w-full sm:w-1/3 flex flex-col gap-4 sticky top-32">
-              <span className="text-sm font-medium tracking-wide uppercase text-stone-500">about me</span>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
-                Human first.<br/>Always.
+            {/* Left Side */}
+            <div className="w-full lg:w-[45%] lg:border-r-[3px] border-stone-900 p-6 lg:p-16 xl:p-24 flex flex-col gap-6 lg:sticky lg:top-0 lg:h-screen justify-start">
+              <span className="text-sm font-black tracking-widest uppercase text-stone-900">ABOUT ME</span>
+              <h2 className="text-[4rem] sm:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-bold tracking-tighter leading-[0.85] text-stone-900 uppercase">
+                HUMAN<br/>FIRST.<br/>
+                <span className="text-[#f5eed4] italic font-serif tracking-normal lowercase">Always.</span>
               </h2>
             </div>
 
-            <div className="w-full sm:w-2/3 flex flex-col gap-16">
+            {/* Right Side */}
+            <div className="w-full lg:w-[55%] p-6 lg:p-16 xl:p-24 flex flex-col gap-16">
 
-              <div className="flex flex-col gap-6 text-lg sm:text-xl text-stone-800 leading-relaxed">
-                <p>
+              <div className="flex flex-col gap-8 text-stone-900">
+                <p className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight">
                   I grew up in Austin as the fourth of five children — and eventually the seventh of eight. A full house taught me how to read a room, make space for different personalities, and find connection across a lot of noise.
                 </p>
-                <p>
-                  Family gave me a front-row seat to the beauty, friction, humor, and chaotic magic of being human. It also made me curious about the forces that shape us: belonging, belief, responsibility, freedom, and love.
-                </p>
-                <p>
-                  I spent years trying to live inside other people’s idea of “on the right track.” Real direction started when I stopped asking where I could fit and started asking what kind of life I am actually here to build.
-                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg font-medium leading-relaxed">
+                  <p>
+                    Family gave me a front-row seat to the beauty, friction, humor, and chaotic magic of being human. It also made me curious about the forces that shape us: belonging, belief, responsibility, freedom, and love.
+                  </p>
+                  <p>
+                    I spent years trying to live inside other people’s idea of “on the right track.” Real direction started when I stopped asking where I could fit and started asking what kind of life I am actually here to build.
+                  </p>
+                </div>
               </div>
 
               {/* The Blueprint section */}
-              <div className="flex flex-col gap-10 mt-8 border-t border-stone-200 pt-16">
-                <div className="flex flex-col">
-                  <h3 className="text-3xl font-bold">The blueprint</h3>
-                  <span className="text-stone-500 italic">useful lenses, not a cage</span>
+              <div className="flex flex-col w-full border-[3px] border-stone-900 bg-[#f4f1e1] shadow-[8px_8px_0_0_#1a1a1a]">
+
+                <div className="bg-brand-yellow flex justify-between items-center px-6 py-3 border-b-[3px] border-stone-900">
+                  <span className="text-xs font-black uppercase tracking-widest">THE BLUEPRINT</span>
+                  <span className="text-xs font-black uppercase tracking-widest">USEFUL LENSES, NOT A CAGE</span>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
-                  <div className="flex flex-col gap-3">
-                    <h4 className="font-bold text-lg uppercase tracking-wide">ENFJ</h4>
-                    <p className="text-stone-600">I’m wired to notice people, possibilities, and the emotional weather in a room—then help turn connection into momentum.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2">
+
+                  {/* ENFJ */}
+                  <div className="p-6 md:p-8 flex flex-col gap-4 border-b-[3px] md:border-r-[3px] border-stone-900">
+                    <h4 className="font-black text-lg uppercase tracking-wide">ENFJ</h4>
+                    <p className="text-stone-800 font-medium leading-relaxed">I’m wired to notice people, possibilities, and the emotional weather in a room—then help turn connection into momentum.</p>
                   </div>
 
-                  <div className="flex flex-col gap-3">
-                    <h4 className="font-bold text-lg uppercase tracking-wide">Enneagram 4w3</h4>
-                    <p className="text-stone-600">I want what I make to feel unmistakably true and deeply personal, while still giving it enough shape to reach other people.</p>
+                  {/* Enneagram */}
+                  <div className="p-6 md:p-8 flex flex-col gap-4 border-b-[3px] border-stone-900">
+                    <h4 className="font-black text-lg uppercase tracking-wide">ENNEAGRAM 4W3</h4>
+                    <p className="text-stone-800 font-medium leading-relaxed">I want what I make to feel unmistakably true and deeply personal, while still giving it enough shape to reach other people.</p>
                   </div>
 
-                  <div className="flex flex-col gap-3">
-                    <h4 className="font-bold text-lg uppercase tracking-wide">Human Design 2/4 Generator</h4>
-                    <p className="text-stone-600">I do my best work by responding to what genuinely lights me up, leaving room for solitude, and letting relationships open the right doors.</p>
+                  {/* Human Design */}
+                  <div className="p-6 md:p-8 flex flex-col gap-4 border-b-[3px] md:border-b-0 md:border-r-[3px] border-stone-900">
+                    <h4 className="font-black text-lg uppercase tracking-wide">HUMAN DESIGN 2/4 GENERATOR</h4>
+                    <p className="text-stone-800 font-medium leading-relaxed">I do my best work by responding to what genuinely lights me up, leaving room for solitude, and letting relationships open the right doors.</p>
                   </div>
 
-                  <div className="flex flex-col gap-3">
-                    <h4 className="font-bold text-lg uppercase tracking-wide text-balance leading-tight">Virgo sun · Taurus moon · Scorpio rising</h4>
-                    <p className="text-stone-600">Careful craft, a steady emotional core, and an instinct to look beneath the surface.</p>
+                  {/* Astrological */}
+                  <div className="p-6 md:p-8 flex flex-col gap-4">
+                    <h4 className="font-black text-lg uppercase tracking-wide text-balance leading-tight">VIRGO SUN · TAURUS MOON · SCORPIO RISING</h4>
+                    <p className="text-stone-800 font-medium leading-relaxed">Careful craft, a steady emotional core, and an instinct to look beneath the surface.</p>
                   </div>
+
                 </div>
 
-                <div className="bg-stone-100 p-8 rounded-2xl mt-4">
-                  <p className="text-stone-700 italic text-lg leading-relaxed">
-                    <span className="font-bold not-italic">Fun astrological fact:</span> I was born with Mercury, Venus, Saturn, Uranus, and Neptune retrograde—which feels very on-brand for someone who rethinks everything, questions received wisdom, and cares a lot about living in alignment with real values.
+                <div className="bg-[#cba8ff] p-6 md:p-8 border-t-[3px] border-stone-900">
+                  <p className="text-stone-900 text-lg leading-relaxed font-medium">
+                    <span className="font-black">Fun astrological fact:</span> I was born with Mercury, Venus, Saturn, Uranus, and Neptune retrograde—which feels very on-brand for someone who rethinks everything, questions received wisdom, and cares a lot about living in alignment with real values.
                   </p>
                 </div>
               </div>
