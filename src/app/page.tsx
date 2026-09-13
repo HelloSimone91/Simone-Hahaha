@@ -67,7 +67,7 @@ export default function Home() {
             {/* Project 1 */}
             <article className="flex flex-col md:flex-row gap-8 items-start group">
               <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-green-text font-mono font-bold text-lg">01</span>
+                <span className="text-brand-green font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
               </div>
               <div className="md:w-2/3 flex flex-col gap-6">
@@ -89,7 +89,7 @@ export default function Home() {
             {/* Project 2 */}
             <article className="flex flex-col md:flex-row gap-8 items-start group">
               <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-pink-text font-mono font-bold text-lg">02</span>
+                <span className="text-brand-pink font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
               </div>
               <div className="md:w-2/3 flex flex-col gap-6">
@@ -111,7 +111,7 @@ export default function Home() {
             {/* Project 3 */}
             <article className="flex flex-col md:flex-row gap-8 items-start group">
               <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-blue-text font-mono font-bold text-lg">03</span>
+                <span className="text-brand-blue font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
               </div>
               <div className="md:w-2/3 flex flex-col gap-6">
@@ -133,7 +133,7 @@ export default function Home() {
             {/* Project 4 */}
             <article id="ideas" className="flex flex-col md:flex-row gap-8 items-start group">
               <div className="md:w-1/3 flex flex-col gap-2">
-                <span className="text-brand-yellow-text font-mono font-bold text-lg">04+</span>
+                <span className="text-brand-yellow font-mono font-bold text-lg">04+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / art / unfinished things</span>
               </div>
               <div className="md:w-2/3 flex flex-col gap-6">
@@ -198,44 +198,38 @@ export default function Home() {
               </div>
 
               {/* The Blueprint section */}
-              <div className="flex flex-col mt-16 pt-16 border-t border-stone-200">
-                <div className="border-[1.5px] border-stone-900 bg-[#f7e3c3] flex flex-col shadow-sm">
+              <div className="flex flex-col gap-10 mt-8 border-t border-stone-200 pt-16">
+                <div className="flex flex-col">
+                  <h3 className="text-3xl font-bold">The blueprint</h3>
+                  <span className="text-stone-500 italic">useful lenses, not a cage</span>
+                </div>
 
-                  {/* Top Header */}
-                  <div className="bg-[#f0e454] border-b-[1.5px] border-stone-900 py-3 px-6 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-stone-900">
-                    <span>The Blueprint</span>
-                    <span>Useful lenses, not a cage</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
+                  <div className="flex flex-col gap-3">
+                    <h4 className="font-bold text-lg uppercase tracking-wide">ENFJ</h4>
+                    <p className="text-stone-600">I’m wired to notice people, possibilities, and the emotional weather in a room—then help turn connection into momentum.</p>
                   </div>
 
-                  {/* 2x2 Grid */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#f2ede1]">
-                    <div className="p-8 border-b-[1.5px] sm:border-r-[1.5px] border-stone-900 flex flex-col gap-3">
-                      <h4 className="font-bold text-[15px] uppercase tracking-wide text-stone-900">ENFJ</h4>
-                      <p className="text-stone-800 text-[15px] leading-relaxed">I’m wired to notice people, possibilities, and the emotional weather in a room—then help turn connection into momentum.</p>
-                    </div>
-
-                    <div className="p-8 border-b-[1.5px] border-stone-900 flex flex-col gap-3">
-                      <h4 className="font-bold text-[15px] uppercase tracking-wide text-stone-900">Enneagram 4w3</h4>
-                      <p className="text-stone-800 text-[15px] leading-relaxed">I want what I make to feel unmistakably true and deeply personal, while still giving it enough shape to reach other people.</p>
-                    </div>
-
-                    <div className="p-8 sm:border-b-0 border-b-[1.5px] sm:border-r-[1.5px] border-stone-900 flex flex-col gap-3">
-                      <h4 className="font-bold text-[15px] uppercase tracking-wide text-stone-900">Human Design 2/4 Generator</h4>
-                      <p className="text-stone-800 text-[15px] leading-relaxed">I do my best work by responding to what genuinely lights me up, leaving room for solitude, and letting relationships open the right doors.</p>
-                    </div>
-
-                    <div className="p-8 flex flex-col gap-3">
-                      <h4 className="font-bold text-[15px] uppercase tracking-wide text-stone-900">Virgo sun · Taurus moon · Scorpio rising</h4>
-                      <p className="text-stone-800 text-[15px] leading-relaxed">Careful craft, a steady emotional core, and an instinct to look beneath the surface.</p>
-                    </div>
+                  <div className="flex flex-col gap-3">
+                    <h4 className="font-bold text-lg uppercase tracking-wide">Enneagram 4w3</h4>
+                    <p className="text-stone-600">I want what I make to feel unmistakably true and deeply personal, while still giving it enough shape to reach other people.</p>
                   </div>
 
-                  {/* Bottom Bar */}
-                  <div className="bg-[#b785f5] border-t-[1.5px] border-stone-900 p-8">
-                    <p className="text-stone-900 text-[15px] leading-relaxed">
-                      <span className="font-bold">Fun astrological fact:</span> I was born with Mercury, Venus, Saturn, Uranus, and Neptune retrograde—which feels very on-brand for someone who rethinks everything, questions received wisdom, and cares a lot about living in alignment with real values.
-                    </p>
+                  <div className="flex flex-col gap-3">
+                    <h4 className="font-bold text-lg uppercase tracking-wide">Human Design 2/4 Generator</h4>
+                    <p className="text-stone-600">I do my best work by responding to what genuinely lights me up, leaving room for solitude, and letting relationships open the right doors.</p>
                   </div>
+
+                  <div className="flex flex-col gap-3">
+                    <h4 className="font-bold text-lg uppercase tracking-wide text-balance leading-tight">Virgo sun · Taurus moon · Scorpio rising</h4>
+                    <p className="text-stone-600">Careful craft, a steady emotional core, and an instinct to look beneath the surface.</p>
+                  </div>
+                </div>
+
+                <div className="bg-stone-100 p-8 rounded-2xl mt-4">
+                  <p className="text-stone-700 italic text-lg leading-relaxed">
+                    <span className="font-bold not-italic">Fun astrological fact:</span> I was born with Mercury, Venus, Saturn, Uranus, and Neptune retrograde—which feels very on-brand for someone who rethinks everything, questions received wisdom, and cares a lot about living in alignment with real values.
+                  </p>
                 </div>
               </div>
 

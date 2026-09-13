@@ -4,13 +4,9 @@
   --background: #faf9f6;
   --foreground: #1a1a1a;
   --brand-green: #e6edd9;
-  --brand-green-text: #4a6741;
   --brand-pink: #f5e4e6;
-  --brand-pink-text: #a1535d;
   --brand-blue: #dcedef;
-  --brand-blue-text: #416f73;
   --brand-yellow: #f5f0db;
-  --brand-yellow-text: #967e1a;
 }
 
 @theme inline {
@@ -20,13 +16,9 @@
   --font-mono: var(--font-geist-mono);
 
   --color-brand-green: var(--brand-green);
-  --color-brand-green-text: var(--brand-green-text);
   --color-brand-pink: var(--brand-pink);
-  --color-brand-pink-text: var(--brand-pink-text);
   --color-brand-blue: var(--brand-blue);
-  --color-brand-blue-text: var(--brand-blue-text);
   --color-brand-yellow: var(--brand-yellow);
-  --color-brand-yellow-text: var(--brand-yellow-text);
 
   --animate-marquee: marquee 20s linear infinite;
 
