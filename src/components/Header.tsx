@@ -10,7 +10,7 @@ export default function Header() {
         <Link href="/#work" className="hover:text-stone-500 transition-colors">
           work
         </Link>
-        <Link href="/ideas/" className="hover:text-stone-500 transition-colors">
+        <Link href="/ideas.html" className="hover:text-stone-500 transition-colors">
           idea corner
         </Link>
         <Link href="/#about" className="hover:text-stone-500 transition-colors">
