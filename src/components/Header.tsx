@@ -7,18 +7,18 @@ export default function Header() {
         SIMONE!
       </Link>
       <nav className="hidden sm:flex items-center gap-8 text-sm font-medium">
-        <Link href="#work" className="hover:text-stone-500 transition-colors">
+        <Link href="/#work" className="hover:text-stone-500 transition-colors">
           work
         </Link>
-        <Link href="#ideas" className="hover:text-stone-500 transition-colors">
+        <Link href="/ideas.html" className="hover:text-stone-500 transition-colors">
           idea corner
         </Link>
-        <Link href="#about" className="hover:text-stone-500 transition-colors">
+        <Link href="/#about" className="hover:text-stone-500 transition-colors">
           about
         </Link>
-        <a href="#contact" className="hover:text-stone-500 transition-colors flex items-center gap-1">
+        <Link href="/#contact" className="hover:text-stone-500 transition-colors flex items-center gap-1">
           say hi ↗
-        </a>
+        </Link>
       </nav>
       {/* Mobile menu could go here, but hiding for simplicity like a typical portfolio */}
     </header>

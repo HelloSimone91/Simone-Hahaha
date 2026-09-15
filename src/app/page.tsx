@@ -73,7 +73,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Values in the Wild</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A growing body of work about turning values from lofty nouns into observable verbs — and using that practice to build clarity, empathy, and connection.
+                  A field guide for exploring your values, choosing one to practice, and turning reflection into everyday action.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">notice</span>
@@ -93,7 +93,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Howdy Human</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A home for human-centered experiments: making life more intentional, more livable, and a little less weird to navigate alone.
+                  A values dictionary written in everyday language, with definitions grounded in real actions, behaviors, and choices.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">question</span>
@@ -105,7 +105,7 @@ export default function Home() {
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://signalandformmedia.gumroad.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Things Get Weird</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A place for the strange turns, honest questions, and unexpected connections that show up when we pay attention to being human.
+                  A growing collection of curious stories and creative experiments from Signal + Form. The shop is still taking shape.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">wonder</span>
@@ -125,7 +125,7 @@ export default function Home() {
             </a>
 
             {/* Project 4 */}
-            <a href="/ideas" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/ideas.html" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">04+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / art / unfinished things</span>
@@ -133,7 +133,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Idea Corner</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A living shelf for ideas I’m exploring, projects that are still simmering, and art I want to keep where I can see it.
+                  A scrollable jumble of art, inventions, questions, stories, and half-built worlds from across my creative life.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">collect</span>
@@ -173,7 +173,7 @@ export default function Home() {
               <span className="text-sm font-black tracking-widest uppercase text-stone-900">ABOUT ME</span>
               <h2 className="text-[4rem] sm:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-bold tracking-tighter leading-[0.85] text-stone-900 uppercase">
                 HUMAN<br/>FIRST.<br/>
-                <span className="text-[#f5eed4] italic font-serif tracking-normal lowercase">Always.</span>
+                <span className="text-[#6e3fe3] italic font-serif tracking-normal lowercase">Always.</span>
               </h2>
             </div>
 
