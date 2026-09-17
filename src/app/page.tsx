@@ -9,19 +9,24 @@ export default function Home() {
       <main className="flex-1 flex flex-col">
 
         {/* HERO SECTION */}
-        <section className="px-6 pt-24 pb-20 sm:pt-32 sm:pb-32 max-w-5xl mx-auto w-full flex flex-col gap-8">
-          <div className="flex flex-col gap-2">
-            <span className="text-sm font-medium tracking-wide uppercase text-stone-500">
-              Austin, Texas · human, maker, question-asker
-            </span>
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-balance leading-[1.05]">
-              Making things<br />out loud.
-            </h1>
+        <section className="hero-with-portrait">
+          <div className="hero-copy">
+            <div className="flex flex-col gap-2">
+              <span className="text-sm font-medium tracking-wide uppercase text-stone-500">
+                Austin, Texas · human, maker, question-asker
+              </span>
+              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-balance leading-[1.05]">
+                Making things<br />out loud.
+              </h1>
+            </div>
+            <div className="max-w-2xl mt-4">
+              <p className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed text-stone-800">
+                Hi, I’m Simone. I make things about values, behavior, and being a person. I think values-based living could save us all.
+              </p>
+            </div>
           </div>
-          <div className="max-w-2xl mt-4">
-            <p className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed text-stone-800">
-              Hi, I’m Simone. I make things about values, behavior, and being a person. I think values-based living could save us all.
-            </p>
+          <div className="hero-portrait" aria-hidden="true">
+            <img src="/glow-simone.png" alt="" />
           </div>
         </section>
 
