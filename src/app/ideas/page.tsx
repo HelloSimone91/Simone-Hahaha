@@ -61,39 +61,14 @@ export default function IdeasPage() {
             <Image src="/ideas/roses-2024.png" alt="A digital drawing of pink roses in a blue vase" width={2550} height={3300} />
             <figcaption><strong>Roses 2024</strong><span>digital art</span></figcaption>
           </figure>
+
+          <figure className="art-piece art-piece-nail">
+            <Image src="/ideas/nail-polish-box.png" alt="A pink box labeled OPI Nail Lacquer containing assorted nail polishes" width={1782} height={1246} />
+            <figcaption><strong>Nail Polish Box</strong><span>mixed media</span></figcaption>
+          </figure>
           <figure className="art-piece art-piece-pattern">
             <Image src="/ideas/digital-art.jpg" alt="An abstract flowing pattern in green, purple, blue, and cream" width={1064} height={739} />
             <figcaption><strong>Shape Negotiation</strong><span>digital pattern study</span></figcaption>
-          </figure>
-        </section>
-
-        <section className="archive-wall" aria-labelledby="archive-heading">
-          <header className="archive-heading">
-            <p>more from the making archive</p>
-            <h2 id="archive-heading">made by hand,<br /><em>kept in motion.</em></h2>
-          </header>
-
-          <figure className="archive-piece archive-piece-circle">
-            <Image src="/ideas/circle-burst-2024.jpg" alt="A gel pen drawing of colorful circles connected by fine radiating lines" width={1536} height={2048} />
-            <figcaption><strong>Circle Burst</strong><span>gel pen on paper · 2024</span></figcaption>
-          </figure>
-
-          <figure className="archive-piece archive-piece-dino">
-            <Image src="/ideas/dino-party-2022.jpg" alt="A bright blue dinosaur figure standing on a painted and beaded wooden box" width={2800} height={2100} />
-            <figcaption><strong>Dino Party</strong><span>2022</span></figcaption>
-          </figure>
-
-          <article className="archive-pair">
-            <div className="archive-pair-images">
-              <Image src="/ideas/jewelry-upcycle-front-2020.jpg" alt="Front of a blue upcycled jewelry cabinet with floral drawers and etched glass doors" width={1447} height={1087} />
-              <Image src="/ideas/jewelry-upcycle-back-2020.jpg" alt="Back of the blue upcycled jewelry cabinet covered with colorful Lotería cards" width={1447} height={1087} />
-            </div>
-            <div className="archive-pair-caption"><strong>Jewelry Upcycle</strong><span>front + back · 2020</span></div>
-          </article>
-
-          <figure className="archive-piece archive-piece-jug">
-            <Image src="/ideas/nail-polish-jug-2020.jpg" alt="A large jug covered in layered drips of colorful nail polish" width={1086} height={1448} />
-            <figcaption><strong>Nail Polish Jug</strong><span>2020</span></figcaption>
           </figure>
         </section>
 
