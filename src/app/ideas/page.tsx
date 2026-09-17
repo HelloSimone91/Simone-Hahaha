@@ -100,11 +100,8 @@ export default function IdeasPage() {
         <section className="project-strip">
           <article className="project-feature shirt-feature">
             <p className="tape-label">things to wear</p>
-            <a className="shirt-preview-link" href="https://app.notion.com/p/hellosimone/The-Right-Way-T-Shirt-40a5de61f03e4d62affb5c69b3c763d3?source=copy_link" target="_blank" rel="noreferrer">
-              <Image className="shirt-preview" src="/ideas/the-right-way-t.jpg" alt="Four-frame preview of The Right Way T, a patchwork shirt shown from the front and back" width={2172} height={724} />
-              <h2>The Right Way T <span aria-hidden="true">↗</span></h2>
-              <span className="sr-only">Open The Right Way T in Notion</span>
-            </a>
+            <div className="shirt-drawing" aria-hidden="true"><span>THE<br />RIGHT<br />WAY</span></div>
+            <h2>The “Right Way” T-Shirt</h2>
             <p>A sewn prototype made from fabric scraps. Inside out, backwards, or forwards, every way is the right way.</p>
           </article>
           <article className="project-feature disco-feature">
