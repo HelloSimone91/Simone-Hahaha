@@ -77,7 +77,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Project 1 */}
-            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#20172c] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
@@ -97,7 +97,7 @@ export default function Home() {
             </a>
 
             {/* Project 2 */}
-            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#20172c] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
@@ -117,7 +117,7 @@ export default function Home() {
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#20172c] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
@@ -137,7 +137,7 @@ export default function Home() {
             </a>
 
             {/* Project 4 */}
-            <a href="/ideas.html" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#20172c] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/ideas.html" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">04+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / art / unfinished things</span>
@@ -185,7 +185,7 @@ export default function Home() {
               <span className="text-sm font-black tracking-widest uppercase text-stone-900">ABOUT ME</span>
               <h2 className="text-[4rem] sm:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-bold tracking-tighter leading-[0.85] text-stone-900 uppercase">
                 HUMAN<br/>FIRST.<br/>
-                <span className="text-[#f6eedb] italic font-serif tracking-normal lowercase">Always.</span>
+                <span className="text-[#f5eed4] italic font-serif tracking-normal lowercase">Always.</span>
               </h2>
             </div>
 
@@ -208,7 +208,7 @@ export default function Home() {
               </div>
 
               {/* The Blueprint section */}
-              <div className="flex flex-col w-full border-[3px] border-stone-900 bg-[#f6eedb] shadow-[8px_8px_0_0_#20172c]">
+              <div className="flex flex-col w-full border-[3px] border-stone-900 bg-[#f4f1e1] shadow-[8px_8px_0_0_#1a1a1a]">
 
                 <div className="bg-brand-yellow flex justify-between items-center px-6 py-3 border-b-[3px] border-stone-900">
                   <span className="text-xs font-black uppercase tracking-widest">THE BLUEPRINT</span>
@@ -243,7 +243,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="bg-[#c18ae8] p-6 md:p-8 border-t-[3px] border-stone-900">
+                <div className="bg-[#cba8ff] p-6 md:p-8 border-t-[3px] border-stone-900">
                   <p className="text-stone-900 text-lg leading-relaxed font-medium">
                     <span className="font-black">Fun astrological fact:</span> I was born with Mercury, Venus, Saturn, Uranus, and Neptune retrograde—which feels very on-brand for someone who rethinks everything, questions received wisdom, and cares a lot about living in alignment with real values.
                   </p>

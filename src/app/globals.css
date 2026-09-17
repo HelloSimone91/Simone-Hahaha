@@ -1,23 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6eedb;
-  --foreground: #20172c;
-  --brand-green: #c18ae8;
-  --brand-pink: #ff8298;
-  --brand-blue: #97d3dc;
-  --brand-yellow: #f8ef58;
-  --brand-plum: #725084;
-  --brand-coral: #ff6b61;
-  --color-stone-900: #20172c;
-  --color-stone-800: #20172c;
-  --color-stone-700: #725084;
-  --color-stone-500: #725084;
-  --color-stone-400: #725084;
-  --color-stone-300: #f6eedb;
-  --color-stone-200: #c18ae8;
-  --color-stone-100: #f6eedb;
-  --color-white: #f6eedb;
+  --background: #faf9f6;
+  --foreground: #1a1a1a;
+  --brand-green: #e6edd9;
+  --brand-pink: #f5e4e6;
+  --brand-blue: #dcedef;
+  --brand-yellow: #f5f0db;
 }
 
 .hero-with-portrait {
@@ -118,8 +107,6 @@
   --color-brand-pink: var(--brand-pink);
   --color-brand-blue: var(--brand-blue);
   --color-brand-yellow: var(--brand-yellow);
-  --color-brand-plum: var(--brand-plum);
-  --color-brand-coral: var(--brand-coral);
 
   --animate-marquee: marquee 20s linear infinite;
 
