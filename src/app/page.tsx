@@ -167,7 +167,7 @@ export default function Home() {
               What do our actions<br/>tell us we value?
             </h2>
             <p className="text-lg sm:text-xl text-stone-700 max-w-2xl text-balance font-medium leading-relaxed">
-              Our actions are always telling us something. When we listen honestly and objectively, we can work with ourselves and make more intentional choices about what comes next.
+              Our actions are always telling us something. When we listen honestly and objectively, we can practice future-self collaboration by making more intentional choices about what comes next.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-sm border border-stone-100 w-full max-w-md">
               <span className="text-xs font-black uppercase tracking-widest text-stone-400">DO NEXT →</span>
