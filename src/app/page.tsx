@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -13,7 +14,7 @@ export default function Home() {
           <div className="hero-copy">
             <div className="flex flex-col gap-2">
               <span className="text-sm font-medium tracking-wide uppercase text-stone-500">
-                Austin, Texas · human, maker, question-asker
+                Austin, Texas · curious human making things
               </span>
               <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-balance leading-[1.05]">
                 Making things<br />out loud.
@@ -26,7 +27,13 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-portrait" aria-hidden="true">
-            <img src="/glow-simone.png" alt="" />
+            <Image
+              src="/glow-simone.png"
+              alt=""
+              width={1122}
+              height={1402}
+              priority
+            />
           </div>
         </section>
 
