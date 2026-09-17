@@ -16,7 +16,7 @@ export default function Header() {
         <Link href="/#about" className="hover:-translate-y-1 hover:text-stone-500 transition-all">
           about
         </Link>
-        <Link href="/#contact" className="hover:-translate-y-1 transition-all flex items-center gap-1 border-2 border-stone-900 px-3 py-1 bg-brand-yellow hover:bg-white shadow-[2px_2px_0_0_#1a1a1a]">
+        <Link href="/contact.html" className="hover:-translate-y-1 transition-all flex items-center gap-1 border-2 border-stone-900 px-3 py-1 bg-brand-yellow hover:bg-white shadow-[2px_2px_0_0_#1a1a1a]">
           say hi ↗
         </Link>
       </nav>

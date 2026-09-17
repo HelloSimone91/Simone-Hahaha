@@ -258,9 +258,7 @@ export default function Home() {
               Have a thought, a question, or a delightfully weird idea?
             </p>
             <a
-              href="https://www.howdyhuman.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact.html"
               className="mt-4 px-8 py-4 bg-white text-stone-900 font-bold rounded-full hover:bg-stone-200 transition-colors text-lg"
             >
               Let’s connect ↗
