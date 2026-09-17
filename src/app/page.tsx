@@ -159,15 +159,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PHILOSOPHY QUOTE SECTION */}
+        {/* PHILOSOPHY SECTION */}
         <section className="bg-brand-yellow/30 py-24 sm:py-32 px-6">
           <div className="max-w-4xl mx-auto flex flex-col gap-10 items-center text-center">
             <span className="text-sm font-bold uppercase tracking-widest text-stone-500">The thread through all of it</span>
-            <blockquote className="text-4xl sm:text-5xl md:text-6xl font-bold text-stone-900 leading-tight">
-              “Values are real<br/>when we live them.”
-            </blockquote>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-stone-900 leading-tight">
+              What do our actions<br/>tell us we value?
+            </h2>
             <p className="text-lg sm:text-xl text-stone-700 max-w-2xl text-balance font-medium leading-relaxed">
-              I’m interested in the distance between what we say matters and what we repeatedly do. My work lives in that space: noticing our verbs, finding the values beneath them, and choosing what to practice next.
+              Our actions are always telling us something. When we listen honestly and objectively, we can work with ourselves and make more intentional choices about what comes next.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-sm border border-stone-100 w-full max-w-md">
               <span className="text-xs font-black uppercase tracking-widest text-stone-400">DO NEXT →</span>
