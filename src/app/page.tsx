@@ -185,7 +185,7 @@ export default function Home() {
               <span className="text-sm font-black tracking-widest uppercase text-stone-900">ABOUT ME</span>
               <h2 className="text-[4rem] sm:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-bold tracking-tighter leading-[0.85] text-stone-900 uppercase">
                 HUMAN<br/>FIRST.<br/>
-                <span className="text-[#f5eed4] italic font-serif tracking-normal lowercase">Always.</span>
+                <span className="text-[#C18AE8] italic font-serif tracking-normal lowercase">Always.</span>
               </h2>
             </div>
 
