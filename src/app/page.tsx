@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -10,7 +9,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col">
 
         {/* HERO SECTION */}
-        <section className="hero-with-portrait">
+        <section className="hero">
           <div className="hero-copy">
             <div className="flex flex-col gap-2">
               <span className="text-sm font-medium tracking-wide uppercase text-stone-500">
@@ -25,15 +24,6 @@ export default function Home() {
                 Hi, I’m Simone. I make things about values, behavior, and being a person. I think values-based living could save us all.
               </p>
             </div>
-          </div>
-          <div className="hero-portrait" aria-hidden="true">
-            <Image
-              src="/glow-simone.png"
-              alt=""
-              width={1122}
-              height={1402}
-              priority
-            />
           </div>
         </section>
 
