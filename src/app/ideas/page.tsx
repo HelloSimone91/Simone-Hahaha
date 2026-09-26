@@ -26,6 +26,81 @@ const parodySongs = [
   ["This is how we human", "A possible Howdy Human theme song, to “This Is How We Do It.”", "https://app.notion.com/p/03564655281644849405d23025afa8ea"],
 ];
 
+const portfolioCollections = [
+  {
+    number: "01",
+    title: "Objects & assemblage",
+    note: "Small worlds built from found frames, paint, metal, texture, and whatever else wanted to join in.",
+    tone: "rose",
+    works: [
+      {
+        title: "Lil Texas Frame",
+        detail: "mixed-media assemblage · 2021",
+        images: [["/ideas/lil-texas-frame-2021.png", "An ornate gold frame decorated with pearls and a small Texas-shaped element", 1086, 1448]],
+      },
+      {
+        title: "Pink Aluminum Jewelry Dish",
+        detail: "painted aluminum · two views",
+        images: [
+          ["/ideas/pink-aluminum-jewelry-dish.png", "Overhead view of a hand-formed pink aluminum jewelry dish", 1448, 1086],
+          ["/ideas/pink-aluminum-jewelry-dish-side.png", "Low side view showing the layered construction of the pink aluminum jewelry dish", 1536, 1024],
+        ],
+      },
+      {
+        title: "Bird Frame",
+        detail: "mixed-media relief",
+        images: [["/ideas/bird-frame.png", "Layered bird and flower relief nested inside lavender and antique-gold frames", 1390, 1132]],
+      },
+    ],
+  },
+  {
+    number: "02",
+    title: "Paintings & mixed media",
+    note: "Color studies, layered surfaces, and pieces made by following the material until it started talking back.",
+    tone: "blue",
+    works: [
+      {
+        title: "City",
+        detail: "mixed media · 2022",
+        images: [["/ideas/city-2022.png", "Colorful dimensional mixed-media artwork on a purple rectangular support", 1449, 1086]],
+      },
+      {
+        title: "Tiny Paint",
+        detail: "paint study · 2022",
+        images: [["/ideas/tiny-paint-2022.png", "Small square marbled painting in teal, blue, chartreuse, and purple", 1448, 1086]],
+      },
+    ],
+  },
+  {
+    number: "03",
+    title: "Drawings & studies",
+    note: "Lines allowed to wander. Notes, repetitions, and drawings made before knowing where they were going.",
+    tone: "olive",
+    works: [
+      {
+        title: "Paradigms",
+        detail: "ink on paper · August 2022",
+        images: [["/ideas/paradigms-aug-2022.jpg", "Hand-lettered Paradigms study with handwritten notes on floral fabric", 1524, 1144]],
+      },
+      {
+        title: "Interesting Colorful Bit",
+        detail: "ink on paper · 2022",
+        images: [["/ideas/interesting-colorful-bit-2022.png", "Flowing abstract drawing made from colorful lines, curls, and filled shapes", 1086, 1448]],
+      },
+      {
+        title: "Flowy Flower",
+        detail: "paint on paper · 2025",
+        images: [["/ideas/flowy-flower-2025.png", "Five-petal flower study painted in teal, blue-gray, olive, and pale yellow", 1086, 1448]],
+      },
+      {
+        title: "Color Swirlys",
+        detail: "ink and marker on paper",
+        images: [["/ideas/color-swirlys.png", "Horizontal abstract drawing with purple loops and colorful wavy bands", 1448, 1086]],
+      },
+    ],
+  },
+] as const;
+
 export default function IdeasPage() {
   return (
     <div id="top" className="min-h-screen bg-[#f7f3e8] text-stone-950">
@@ -65,6 +140,55 @@ export default function IdeasPage() {
             <Image src="/ideas/digital-art.jpg" alt="An abstract flowing pattern in green, purple, blue, and cream" width={1064} height={739} />
             <figcaption><strong>Shape Negotiation</strong><span>digital pattern study</span></figcaption>
           </figure>
+        </section>
+
+        <section className="portfolio-archive" aria-labelledby="portfolio-heading">
+          <header className="portfolio-archive-heading">
+            <div>
+              <p className="portfolio-eyebrow">a closer look at the making archive</p>
+              <h2 id="portfolio-heading">Selected work,<br /><em>2021–2025</em></h2>
+            </div>
+            <div className="portfolio-intro">
+              <p>A collection of objects, paintings, and drawings made in the spaces between ideas. Color, curiosity, and the joy of seeing what happens next.</p>
+              <span>Simone // Idea Corner // 2021–2025</span>
+            </div>
+            <div className="portfolio-scribble" aria-hidden="true">small ideas<br />big worlds<i /></div>
+          </header>
+
+          <div className="portfolio-accordions">
+            {portfolioCollections.map((collection, collectionIndex) => (
+              <details className={`portfolio-collection portfolio-collection-${collection.tone}`} key={collection.title} name="portfolio-collection" open={collectionIndex === 0}>
+                <summary>
+                  <span className="collection-number">{collection.number}</span>
+                  <span className="collection-title">{collection.title}</span>
+                  <span className="collection-meta">{collection.works.length} works</span>
+                  <span className="collection-toggle" aria-hidden="true" />
+                </summary>
+                <div className="collection-reveal">
+                  <div className="collection-copy"><p>{collection.note}</p><span aria-hidden="true">∿ ∿ ∿</span></div>
+                  <div className="collection-grid">
+                    {collection.works.map((work, workIndex) => (
+                      <details className="portfolio-work" key={work.title} name={`portfolio-work-${collection.number}`} open={workIndex === 0}>
+                        <summary>
+                          <span>{String(workIndex + 1).padStart(2, "0")}</span>
+                          <strong>{work.title}</strong>
+                          <i aria-hidden="true" />
+                        </summary>
+                        <div className="portfolio-work-body">
+                          <div className={`portfolio-images portfolio-images-${work.images.length}`}>
+                            {work.images.map(([src, alt, width, height]) => (
+                              <Image key={src} src={src} alt={alt} width={width} height={height} />
+                            ))}
+                          </div>
+                          <div className="portfolio-work-caption"><strong>{work.title}</strong><span>{work.detail}</span></div>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
 
         <section className="archive-wall" aria-labelledby="archive-heading">
