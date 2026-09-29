@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import Header from "@/components/Header";
 
 const notes = [
@@ -69,6 +70,14 @@ const portfolioCollections = [
         detail: "2020",
         images: [["/ideas/nail-polish-jug-2020.png", "A large jug covered in layered drips of colorful nail polish", 1086, 1448]],
       },
+      {
+        title: "The Right Way T",
+        detail: "sewn prototype · fabric scraps",
+        description: "Inside out, backwards, or forwards, every way is the right way.",
+        href: "https://app.notion.com/p/hellosimone/The-Right-Way-T-Shirt-40a5de61f03e4d62affb5c69b3c763d3?source=copy_link",
+        filmstrip: true,
+        images: [["/ideas/the-right-way-t.jpg", "Four photos of The Right Way T, a patchwork shirt shown from the front and back", 2172, 724]],
+      },
     ],
   },
   {
@@ -86,6 +95,11 @@ const portfolioCollections = [
         title: "Tiny Paint",
         detail: "paint study · 2022",
         images: [["/ideas/tiny-paint-2022.png", "Small square marbled painting in teal, blue, chartreuse, and purple", 1448, 1086]],
+      },
+      {
+        title: "Sleepy Flowers",
+        detail: "acrylic and paint pen · 2025",
+        images: [["/ideas/sleepy-flowers.png", "A hand-painted vase of flowers on a layered green canvas", 1448, 1086]],
       },
     ],
   },
@@ -122,6 +136,29 @@ const portfolioCollections = [
       },
     ],
   },
+  {
+    number: "04",
+    title: "Digital art",
+    note: "Digital flowers, patterns, and whatever felt worth making.",
+    tone: "rose",
+    works: [
+      {
+        title: "Soft Constellation",
+        detail: "iPad doodles · 2026",
+        images: [["/ideas/soft-constellation.jpg", "A loose constellation of lavender and orange flower doodles", 739, 1064]],
+      },
+      {
+        title: "Roses 2024",
+        detail: "digital art",
+        images: [["/ideas/roses-2024.png", "A digital drawing of pink roses in a blue vase", 2550, 3300]],
+      },
+      {
+        title: "Shape Negotiation",
+        detail: "digital pattern study",
+        images: [["/ideas/digital-art.jpg", "An abstract flowing pattern in green, purple, blue, and cream", 1064, 739]],
+      },
+    ],
+  },
 ] as const;
 
 export default function IdeasPage() {
@@ -144,26 +181,6 @@ export default function IdeasPage() {
         <div className="ideas-status" aria-label="Creative status">
           <span>made</span><span>making</span><span>maybe someday</span><span>some things are finished. most are alive.</span>
         </div>
-
-        <section className="art-wall" aria-labelledby="art-heading">
-          <div className="section-note"><h2 id="art-heading">art for a softer tomorrow</h2><p>flowers, patterns, paint, and whatever felt worth making</p></div>
-          <figure className="art-piece art-piece-tall">
-            <Image src="/ideas/soft-constellation.jpg" alt="A loose constellation of lavender and orange flower doodles" width={739} height={1064} />
-            <figcaption><strong>Soft Constellation</strong><span>iPad doodles, 2026</span></figcaption>
-          </figure>
-          <figure className="art-piece art-piece-wide">
-            <Image src="/ideas/sleepy-flowers.png" alt="A hand-painted vase of flowers on a layered green canvas" width={1448} height={1086} />
-            <figcaption><strong>Sleepy Flowers</strong><span>acrylic and paint pen, 2025</span></figcaption>
-          </figure>
-          <figure className="art-piece art-piece-rose">
-            <Image src="/ideas/roses-2024.png" alt="A digital drawing of pink roses in a blue vase" width={2550} height={3300} />
-            <figcaption><strong>Roses 2024</strong><span>digital art</span></figcaption>
-          </figure>
-          <figure className="art-piece art-piece-pattern">
-            <Image src="/ideas/digital-art.jpg" alt="An abstract flowing pattern in green, purple, blue, and cream" width={1064} height={739} />
-            <figcaption><strong>Shape Negotiation</strong><span>digital pattern study</span></figcaption>
-          </figure>
-        </section>
 
         <section className="portfolio-archive" aria-labelledby="portfolio-heading">
           <header className="portfolio-archive-heading">
@@ -198,12 +215,24 @@ export default function IdeasPage() {
                           <i aria-hidden="true" />
                         </summary>
                         <div className="portfolio-work-body">
-                          <div className={`portfolio-images portfolio-images-${work.images.length}`}>
-                            {work.images.map(([src, alt, width, height]) => (
-                              <Image key={src} src={src} alt={alt} width={width} height={height} />
-                            ))}
-                          </div>
+                          {"filmstrip" in work ? (
+                            <a className="portfolio-filmstrip" href={work.href} target="_blank" rel="noreferrer">
+                              {[0, 1, 2, 3].map((frame) => (
+                                <span className="portfolio-filmstrip-frame" style={{ "--frame": frame } as CSSProperties} key={frame}>
+                                  <Image src={work.images[0][0]} alt={frame === 0 ? work.images[0][1] : ""} width={work.images[0][2]} height={work.images[0][3]} />
+                                </span>
+                              ))}
+                              <span className="sr-only">Open The Right Way T in Notion</span>
+                            </a>
+                          ) : (
+                            <div className={`portfolio-images portfolio-images-${work.images.length}`}>
+                              {work.images.map(([src, alt, width, height]) => (
+                                <Image key={src} src={src} alt={alt} width={width} height={height} />
+                              ))}
+                            </div>
+                          )}
                           <div className="portfolio-work-caption"><strong>{work.title}</strong><span>{work.detail}</span></div>
+                          {"description" in work && <p className="portfolio-work-description">{work.description}</p>}
                         </div>
                       </details>
                     ))}
@@ -214,16 +243,7 @@ export default function IdeasPage() {
           </div>
         </section>
 
-        <section className="project-strip">
-          <article className="project-feature shirt-feature">
-            <p className="tape-label">things to wear</p>
-            <a className="shirt-preview-link" href="https://app.notion.com/p/hellosimone/The-Right-Way-T-Shirt-40a5de61f03e4d62affb5c69b3c763d3?source=copy_link" target="_blank" rel="noreferrer">
-              <Image className="shirt-preview" src="/ideas/the-right-way-t.jpg" alt="Four-frame preview of The Right Way T, a patchwork shirt shown from the front and back" width={2172} height={724} />
-              <h2>The Right Way T <span aria-hidden="true">↗</span></h2>
-              <span className="sr-only">Open The Right Way T in Notion</span>
-            </a>
-            <p>A sewn prototype made from fabric scraps. Inside out, backwards, or forwards, every way is the right way.</p>
-          </article>
+        <section className="project-strip project-strip-two">
           <article className="project-feature disco-feature">
             <p className="tape-label">products for everyday weirdness</p>
             <div className="disco-ball" aria-hidden="true">✦</div>
