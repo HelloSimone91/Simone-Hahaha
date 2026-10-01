@@ -71,6 +71,14 @@ const portfolioCollections = [
         images: [["/ideas/nail-polish-jug-2020.png", "A large jug covered in layered drips of colorful nail polish", 1086, 1448]],
       },
       {
+        title: "Eucalyptus",
+        detail: "two views · 2026",
+        images: [
+          ["/ideas/eucalyptus-2026.png", "Full view of painted eucalyptus branches arranged in a lace-wrapped vessel", 1122, 1402],
+          ["/ideas/eucalyptus-close-2026.png", "Close view of colorful painted eucalyptus leaves", 1122, 1402],
+        ],
+      },
+      {
         title: "The Right Way T",
         detail: "sewn prototype · fabric scraps",
         description: "Inside out, backwards, or forwards, every way is the right way.",
@@ -186,11 +194,11 @@ export default function IdeasPage() {
           <header className="portfolio-archive-heading">
             <div>
               <p className="portfolio-eyebrow">a closer look at the making archive</p>
-              <h2 id="portfolio-heading">Selected work,<br /><em>2021–2025</em></h2>
+              <h2 id="portfolio-heading">Selected work,<br /><em>2021–2026</em></h2>
             </div>
             <div className="portfolio-intro">
               <p>A collection of objects, paintings, and drawings made in the spaces between ideas. Color, curiosity, and the joy of seeing what happens next.</p>
-              <span>Simone // Idea Corner // 2021–2025</span>
+              <span>Simone // Idea Corner // 2021–2026</span>
             </div>
             <div className="portfolio-scribble" aria-hidden="true">small ideas<br />big worlds<i /></div>
           </header>
