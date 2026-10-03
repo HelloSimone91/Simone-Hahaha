@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import Header from "@/components/Header";
+import IdeaPalettePicker from "@/components/IdeaPalettePicker";
 
 const notes = [
   ["product thought", "Cars need a low gas mode, like low battery mode for phones."],
@@ -174,6 +175,7 @@ export default function IdeasPage() {
     <div id="top" className="min-h-screen bg-[#f7f3e8] text-stone-950">
       <Header />
       <main className="ideas-page">
+        <IdeaPalettePicker />
         <section className="ideas-hero">
           <div>
             <p className="ideas-kicker">made / making / maybe someday</p>
