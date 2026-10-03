@@ -64,10 +64,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
 
             {/* Project 1 */}
-            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
@@ -87,7 +87,7 @@ export default function Home() {
             </a>
 
             {/* Project 2 */}
-            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
@@ -107,7 +107,7 @@ export default function Home() {
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
@@ -127,15 +127,34 @@ export default function Home() {
             </a>
 
             {/* Project 4 */}
-            <a href="/ideas.html" id="ideas" className="hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/art.html" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-[#eaac8b] border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
-                <span className="text-stone-900 font-mono font-bold text-lg">04+</span>
-                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / art / unfinished things</span>
+                <span className="text-stone-900 font-mono font-bold text-lg">04</span>
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-600">Objects / paintings / drawings</span>
+              </div>
+              <div className="w-full flex flex-col gap-6 flex-1">
+                <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Art</h3>
+                <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
+                  Objects, paintings, drawings, and digital work made from curiosity, color, and whatever materials wanted to join in.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">assemble</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">paint</span>
+                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">wander</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Project 5 */}
+            <a href="/ideas.html" id="ideas" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+              <div className="w-full flex flex-col gap-2">
+                <span className="text-stone-900 font-mono font-bold text-lg">05+</span>
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / unfinished things</span>
               </div>
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Idea Corner</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A living shelf for ideas I’m exploring, projects that are still simmering, and art I want to keep where I can see it.
+                  A living shelf for ideas I’m exploring, projects still simmering, and questions I want to keep where I can see them.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">collect</span>
