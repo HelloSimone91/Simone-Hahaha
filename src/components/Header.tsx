@@ -10,6 +10,9 @@ export default function Header() {
         <Link href="/#work" className="hover:-translate-y-1 hover:text-stone-500 transition-all">
           work
         </Link>
+        <Link href="/art.html" className="hover:-translate-y-1 hover:text-stone-500 transition-all">
+          art
+        </Link>
         <Link href="/ideas.html" className="hover:-translate-y-1 hover:text-stone-500 transition-all">
           idea corner
         </Link>
