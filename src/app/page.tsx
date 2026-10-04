@@ -178,10 +178,6 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-stone-700 max-w-2xl text-balance font-medium leading-relaxed">
               Our actions are always telling us something. When we listen honestly and objectively, we can practice future-self collaboration by making more intentional choices about what comes next.
             </p>
-            <div className="mt-8 flex flex-col items-center gap-4 bg-white p-8 rounded-2xl shadow-sm border border-stone-100 w-full max-w-md">
-              <span className="text-xs font-black uppercase tracking-widest text-stone-400">DO NEXT →</span>
-              <span className="font-bold text-xl">What is one verb you did today?</span>
-            </div>
           </div>
         </section>
 
@@ -219,7 +215,7 @@ export default function Home() {
               {/* The Blueprint section */}
               <div className="flex flex-col w-full border-[3px] border-stone-900 bg-[#f4f1e1] shadow-[8px_8px_0_0_#1a1a1a]">
 
-                <div className="bg-brand-yellow flex justify-between items-center px-6 py-3 border-b-[3px] border-stone-900">
+                <div className="bg-[#CBA8FF] flex justify-between items-center px-6 py-3 border-b-[3px] border-stone-900">
                   <span className="text-xs font-black uppercase tracking-widest">THE BLUEPRINT</span>
                   <span className="text-xs font-black uppercase tracking-widest">USEFUL LENSES, NOT A CAGE</span>
                 </div>
