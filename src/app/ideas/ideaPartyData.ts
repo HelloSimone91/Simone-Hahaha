@@ -1,14 +1,45 @@
-export type IdeaPartyItem = { title: string; summary: string; url: string; tags: string[] };
+export type IdeaSheet = {
+  problem: string;
+  idea: string;
+  outcomes: string[];
+  needs: string[];
+};
+
+export type IdeaPartyItem = {
+  title: string;
+  summary: string;
+  url: string;
+  tags: string[];
+  sheet?: IdeaSheet;
+};
 
 export const ideaPartyItems: IdeaPartyItem[] = [
   {
     "title": "The Very Disco D.I.S.C.O Ball",
-    "summary": "D.I.S.C.O. is a portable spacial computing hub mounted on a flexible rotating stand that projects interactive interfaces directly into physical space, allowing users to communicate, work, learn, and experience entertainment through tap-responsive light, embedded cameras, and spatial controls. Designed as a dynamic hub rather than a traditional screen, it transforms any environment into an adaptive digital workspace where technology is engaged with naturally instead of viewed passively.",
+    "summary": "A portable spatial computing hub which projects interactive interfaces into the room around you.",
     "url": "https://app.notion.com/p/30106423ccc1801d97b6c9811810c621",
     "tags": [
       "favorite",
       "product"
-    ]
+    ],
+    "sheet": {
+      "problem": "Flat screens keep us passive and trapped in 2D interfaces. We're tethered to desks, squinting at rectangles, and interacting with digital content in ways disconnected from how we naturally move through physical space. Technology should adapt to our environment, not the other way around.",
+      "idea": "D.I.S.C.O. — a portable holographic spatial computing hub on a flexible rotating stand — projects interactive interfaces directly into physical space. It transforms any room into an intelligent environment where you tap, gesture, and engage with spatial holograms for work, communication, learning, and entertainment. The spatial computing hub becomes a dynamic hub, making space itself the interface.",
+      "outcomes": [
+        "Replace passive screen-viewing with active spatial interaction and natural physical engagement",
+        "Turn any environment into an adaptive digital workspace without requiring fixed hardware or dedicated rooms",
+        "Enable communication, productivity, and immersive media through tap-responsive light and embedded spatial controls"
+      ],
+      "needs": [
+        "Technical prototype development: holographic projection system, flexible stand mechanics, spatial tracking",
+        "UI/UX design for 3D spatial interfaces and gesture controls",
+        "Embedded camera and sensor integration for responsive interaction",
+        "Partnership exploration with AR/holographic tech companies",
+        "User testing environments to refine interaction models",
+        "Brand positioning and storytelling around spatial computing",
+        "Funding strategy: grants, angel investors, or technology partnerships"
+      ]
+    }
   },
   {
     "title": "The tiny window experienced by game room employees",
@@ -22,7 +53,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "dog(/pet) food bag spigot",
-    "summary": "a lil thing like they use to tap maple trees but for dog food bags that way we don’t have to worry about those big ole containers that get the food stale anyway.. and dog food bags are so rugged and awesome they make great storage for dog food hmm ya don’t say idk ….",
+    "summary": "A lil spigot for dispensing food straight from those rugged dog food bags.",
     "url": "https://app.notion.com/p/25906423ccc180f1b3adc65fae9eaef5",
     "tags": [
       "favorite",
@@ -36,38 +67,106 @@ export const ideaPartyItems: IdeaPartyItem[] = [
     "tags": [
       "favorite",
       "product"
-    ]
+    ],
+    "sheet": {
+      "problem": "Traditional s'mores are messy and limited in flavor options. The current process with chocolate squares and graham crackers is clunky. People who enjoy layer-by-layer marshmallow roasting need more flavor options.",
+      "idea": "Create a line of specialty powders and sauces specifically designed for s'mores that can be used at different stages of the marshmallow roasting process, offering new flavors and easier application than traditional ingredients.",
+      "outcomes": [
+        "Simplify the s'mores-making process while reducing mess",
+        "Provide more flavor variety and customization options",
+        "Create a better experience for layer-by-layer marshmallow roasting"
+      ],
+      "needs": [
+        "Research and develop powder formulations that taste good both heated and unheated",
+        "Test different powder combinations (cinnamon sugar, cocoa, espresso, etc.)",
+        "Create complementary sauce options that don't require complex storage or application",
+        "Design packaging that's camping/outdoor-friendly and mess-free"
+      ]
+    }
   },
   {
     "title": "Proposal to sell basic sewing supplies, repair kits, clothing craft supplies in Goodwill checkout areas, helping thrift shoppers modify purchases while creating new revenue streams @goodwill",
-    "summary": "Perhaps it coule be awesome to provide basic clothing modification tools in the new items/convenience section/ check out section at where they sell new packs of batteries, toilet paper, tape, etc… they could also sell sewing kits (from basic to those tiny lil small hand held sewing machine), embelishing supplies (gemstones and the tool used to put them on…), zippers, buttons, RIT dye, fabric glue…@today . More They could have a YouTube channel and a whole DIY/upcycle wing (like as a vocation path option and as a educational provider)",
+    "summary": "Sewing, repair, and upcycling supplies beside the checkout at Goodwill.",
     "url": "https://app.notion.com/p/14606423ccc180d3b661eb6d01e3f467",
     "tags": [
       "favorite",
       "product"
-    ]
+    ],
+    "sheet": {
+      "problem": "Thrift store shoppers often find items that need minor repairs or modifications, but may not have easy access to basic sewing supplies.",
+      "idea": "Place basic sewing kits and clothing modification supplies in Goodwill's checkout/new items section alongside other convenience items like batteries and tape.",
+      "outcomes": [
+        "Make it convenient for shoppers to repair/modify their purchases",
+        "Generate additional revenue through new product sales",
+        "Reduce clothing waste by making repairs more accessible"
+      ],
+      "needs": [
+        "Market research and data analysis to validate demand for sewing supplies among Goodwill shoppers",
+        "Cost analysis and budget proposal for initial inventory investment",
+        "Vendor partnerships with sewing supply manufacturers/distributors",
+        "Approval from Goodwill's merchandising and operations teams",
+        "Store layout modifications to accommodate new product displays",
+        "Staff training on new product knowledge and inventory management",
+        "Marketing materials to promote the new product line",
+        "Implementation timeline and rollout strategy",
+        "Inventory tracking system updates to include new SKUs",
+        "Success metrics and KPIs to measure program effectiveness"
+      ]
+    }
   },
   {
     "title": "Membership-based resale",
-    "summary": "some kind of thing where you pay a certain amount each month and that gives you access to various tiered services such as personal shopping, exclusive pre-sale shopping, a certain number of items each month (the clothes are RFID tagged or something so it’s not hassle to keep track of what you’re permitted to get… i’m imagining the tech they use at the amazon stores where you can just walk out with the shit you want and the cameras or something identify you and charge your amazon account.. .",
+    "summary": "A monthly resale membership with personal shopping, pre-sales, and RFID-tracked items.",
     "url": "https://app.notion.com/p/14606423ccc180aea55ae5a746db6152",
     "tags": [
       "favorite",
       "business"
-    ]
+    ],
+    "sheet": {
+      "problem": "Traditional resale shopping can be time-consuming and unpredictable. Customers want curated, high-quality secondhand items. There is a need for a more structured, reliable resale experience.",
+      "idea": "A membership-based resale service using RFID technology and smart store capabilities to provide tiered access to secondhand clothing and accessories. Members pay monthly fees for different levels of service including personal shopping, pre-sale access, and allocated monthly items.",
+      "outcomes": [
+        "Make secondhand shopping more convenient and accessible",
+        "Create a reliable revenue stream through subscriptions",
+        "Provide a tech-forward solution to inventory management"
+      ],
+      "needs": [
+        "RFID tagging system",
+        "Smart store technology (similar to Amazon Go)",
+        "Inventory management system",
+        "Membership tier structure",
+        "Personal shopping staff",
+        "Physical retail space",
+        "Quality secondhand inventory sources"
+      ]
+    }
   },
   {
     "title": "Accordion annual planner",
-    "summary": "• Each page is ~10in x 14in • daily squares • Notes section / to-do section • Highlights section • Week numbers",
+    "summary": "A full-year planner which unfolds accordion-style, with roomy daily squares and notes.",
     "url": "https://app.notion.com/p/13106423ccc1806ca8c9c4e8f69c600f",
     "tags": [
       "favorite",
       "product"
-    ]
+    ],
+    "sheet": {
+      "problem": "Many people struggle to find a planner that combines the benefits of a yearly overview with detailed daily planning. Traditional planners often lack flexibility and visual appeal.",
+      "idea": "Create an accordion-style annual planner that unfolds to reveal a full year at a glance, with each month containing daily squares large enough for notes, and room at the margins for notes and pattern trackers (habits, menstrual cycles, moods, values observation log, new baby feeding log, etc).",
+      "outcomes": [
+        "Provide users with a unique, visually appealing planning tool that offers both big-picture annual planning and detailed daily organization in one compact, expandable format."
+      ],
+      "needs": [
+        "Design software for creating the layout",
+        "High-quality, durable paper that can withstand frequent folding",
+        "Printing and binding equipment capable of producing accordion-style books",
+        "Market research to refine features and pricing",
+        "Prototype testing with potential users"
+      ]
+    }
   },
   {
     "title": "Big To Do: Size Up Your Success",
-    "summary": "This innovative app uses visual prioritization and satisfying animations to boost productivity and reduce stress. Revolutionize your task management with \"Big To Do: Size Up Your Success\" - where important tasks stand tall!",
+    "summary": "A to-do app where important tasks grow bigger and completed tasks get a satisfying sendoff.",
     "url": "https://app.notion.com/p/a5b74ce67017454aa362034523c58c6e",
     "tags": [
       "favorite",
@@ -114,7 +213,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Neuralink Self awareness monitor",
-    "summary": "Maybe a thing will be … almost like a heart rate monitor but it will be in your brain and it will be able to tell how much of the time you are actually conscious and present and here as far as we understand what here is…",
+    "summary": "Like a heart-rate monitor for how conscious, present, and here you actually are.",
     "url": "https://app.notion.com/p/1ada95bbf5814c6bb4ded65ed1a30d49",
     "tags": [
       "favorite",
@@ -125,7 +224,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Prompt consultants!!",
-    "summary": "update hey fyi just so ya know chat GPT is a great prompt consultant Okay once basically I would go into a business and spend like a half day talking to a certain team trying to accomplish a certain initiative and I would get to know their problem or their project or the pattern they frequently face and help them figure out how to use AI most usefully",
+    "summary": "Spend half a day with a team, learn their patterns, and help them use AI more usefully.",
     "url": "https://app.notion.com/p/6d97874c774d4b65a87f497395ed23f2",
     "tags": [
       "favorite",
@@ -134,7 +233,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "A camera you can put over your door’s eye hole thing",
-    "summary": "basically the blink version of the front door camera but for apartments … so that you don’t have to squint into your apartment eyehole to see what’s in the hall …",
+    "summary": "A Blink-style camera for apartment peepholes, so you can see the hall without squinting.",
     "url": "https://app.notion.com/p/a271e1243c8a4a9dbace7e81d270bf8c",
     "tags": [
       "favorite",
@@ -179,7 +278,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Free stuff Chat GPT nudge",
-    "summary": "I wonder how accurate siri/tracking software/an ML model could get at predicting what we’re about to throw away andi t coul connect us w someone who needs that thing for free",
+    "summary": "Predict what someone is about to throw away and connect it with someone who needs it.",
     "url": "https://app.notion.com/p/a01c4ce61e8e4b77a2198124f9bbff03",
     "tags": [
       "favorite",
@@ -188,7 +287,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "The Frugal Noodle",
-    "summary": "A restaurant/ market/ cooking class space in a smallish college town(I’m picturing Bloomington, Indiana) ( oh also like Fayetteville, Asheville, ~boulder ..: you get the vibe I think) where customers can - Purchase a wide variety of raw noodles at wholesale prices, - Take cooking classes taught by local chefs who will share their method/tradition/culture of whatever type of noodle they are teaching about - Eat meals at various price points to accommodate budgets, stomachs, occasions (parents weekend, game days, finals, self care, friends’ birthdays, casual dates, clubs, lonely kids😊… )",
+    "summary": "A college-town noodle market, restaurant, and cooking-class space for every budget and occasion.",
     "url": "https://app.notion.com/p/e2514b72303b41de9a10277f231efbde",
     "tags": [
       "favorite",
@@ -197,7 +296,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Sim Dog Symposium",
-    "summary": "⎆ Twice annual or like twice per quarter (2x/week?? You never know! conference of competitors collaborating for the betterment of the future ⎆ Could start off as the quarterly staff retreat ! As the Chief Operations Officer, my main focus will be ensuring synergy and easy diligence for the individuals among teams and for the teams making up the whole",
+    "summary": "A recurring conference where competitors collaborate for the betterment of the future.",
     "url": "https://app.notion.com/p/c7f5d21b0fb547c2bf21593fd329799e",
     "tags": [
       "favorite",
@@ -206,7 +305,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Dish towel ✰healthy coping skills and healthy snack breaks ✰",
-    "summary": "Dish towel w a “recipe” on it that is like walking you through a coping skill, then the other side of the dish towel has a food recipe for healthy, easy to make + clean, easy to modify, comfort food",
+    "summary": "A dish towel with a coping skill on one side and an easy comfort-food recipe on the other.",
     "url": "https://app.notion.com/p/2c5c7953e32344a28fb524d2930db2ee",
     "tags": [
       "favorite",
@@ -215,7 +314,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Life Socks! ✰ “No matter how much your life sucks, at least you’ve got Life Socks!” ✰",
-    "summary": "No matter how much your life sucks, you can always count on life socks — for life! As long as you have one sock, we’ll replace the other ya lots of people will steal socks but let’s let ‘em! It’ll balance out, rite? who cares! life sucks! Give the people socks!",
+    "summary": "Keep one sock and we’ll replace the other for life. Who cares! Give the people socks!",
     "url": "https://app.notion.com/p/084e94a25ef64ad8bcd6bb3f2ba3c8eb",
     "tags": [
       "favorite",
@@ -224,7 +323,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "🎶para para para-digms 🎶",
-    "summary": "That song by coldplay about paradise or some shit but the word “paradigms” and it goes on lyricaly define/illustrate/reveal some paradigms or could be a song about mental models",
+    "summary": "Coldplay’s “Paradise,” except it’s about paradigms and mental models.",
     "url": "https://app.notion.com/p/e98d50ac265440a5bf473e33befd51e5",
     "tags": [
       "song"
@@ -360,7 +459,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "🎶If you’re true and you know it, trust yourself 🎶",
-    "summary": "PARODY Even if, when you actually take a look at yourself, you really gotta squint from a distance to see any bit of true… trust that bit, or whatever… trust yourself and see what happens and calibrate. to be geniuine is sort fo the goal or something.. or, it shows anyway… so if I end up being terrible or horrible or the worst, at least I was trying to stay guided by “true” so you can’t really knock it tooooOoOoOOoO bad …. who cares!",
+    "summary": "A parody about trusting whatever bit of true you can see in yourself, then calibrating.",
     "url": "https://app.notion.com/p/3de06423ccc180c199a4c4795d68b504",
     "tags": [
       "song"
@@ -416,7 +515,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Pause it to posit",
-    "summary": "A habit to cultivate where before we make a dumb purchase, send an impulsive text, go off the handle — really any decision but especially those which comprise the patterns of behavior holding us back from our greatness — we pause before we act and then ask (we posit 😉) our AI pal for insight or suggestions",
+    "summary": "Pause before an impulsive choice, then posit the situation to your AI pal.",
     "url": "https://app.notion.com/p/122853a843c74e049280a1505951db1f",
     "tags": [
       "question"
@@ -432,7 +531,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "Slow down, you don’t have much time",
-    "summary": "God gave me this sentence upon awakening last ~October when I started thinking about this year’s annual themes (of of them is Give space to my time )",
+    "summary": "A sentence which arrived while I was thinking about giving space to my time.",
     "url": "https://app.notion.com/p/dc5da73278b74aa3b26d9c850819252d",
     "tags": [
       "question"
@@ -440,7 +539,7 @@ export const ideaPartyItems: IdeaPartyItem[] = [
   },
   {
     "title": "The future of motorcycle safety and riding",
-    "summary": "when all the cars are self driving, and we no longer have “workin’ on the car” as a hobby option… maybe we will take to motorcycles bc with self driving stuff motorcycles won’t be dangerous and they’ll be the last bastion for non autonomous transportation etc idk ok",
+    "summary": "Maybe motorcycles become the last bastion of non-autonomous transportation.",
     "url": "https://app.notion.com/p/25906423ccc180a9bf91d32aba6aec43",
     "tags": [
       "question"
