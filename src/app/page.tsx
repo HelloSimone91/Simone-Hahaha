@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ThoughtLogArchive from "@/components/ThoughtLogArchive";
 
 export default function Home() {
   return (
@@ -201,6 +202,7 @@ export default function Home() {
                 <p className="text-stone-700 leading-relaxed">I sent build 4 of the Values Dictionary off for App Store review today, and TestFlight confirmed it was available for testing tonight. Now we wait. Hitting submit on something this polished felt like a real milestone.</p>
               </article>
             </div>
+            <ThoughtLogArchive />
           </div>
           </div>
         </section>
