@@ -15,6 +15,7 @@ const config: Config = {
         "brand-pink": "var(--brand-pink)",
         "brand-blue": "var(--brand-blue)",
         "brand-yellow": "var(--brand-yellow)",
+        "brand-plum": "var(--brand-plum)",
       },
       keyframes: {
         marquee: {
