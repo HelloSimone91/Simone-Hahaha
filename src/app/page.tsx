@@ -66,8 +66,16 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
 
+            {/* SIGNAL + FORM UMBRELLA */}
+            <div className="lg:col-span-6 bg-brand-plum border-[3px] border-brand-plum p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+              <h3 className="text-3xl sm:text-4xl font-black lowercase text-[#f5f0db] leading-none whitespace-nowrap">signal + form</h3>
+              <p className="text-base sm:text-lg text-[#f5f0db]/80 font-medium leading-relaxed">
+                The studio behind the work. <span className="font-bold text-[#f5f0db]">Values in the Wild</span>, <span className="font-bold text-[#f5f0db]">Howdy Human</span>, and <span className="font-bold text-[#f5f0db]">Things Get Weird</span> are its branches.
+              </p>
+            </div>
+
             {/* Project 1 */}
-            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
@@ -78,16 +86,16 @@ export default function Home() {
                   A growing body of work about turning values from lofty nouns into observable verbs — and using that practice to build clarity, empathy, and connection.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">notice</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">name</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">practice</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">notice</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">name</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">practice</span>
                 </div>
 
               </div>
             </a>
 
             {/* Project 2 */}
-            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
@@ -98,16 +106,16 @@ export default function Home() {
                   A home for human-centered experiments: making life more intentional, more livable, and a little less weird to navigate alone.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">question</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">make</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">connect</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">question</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">make</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">connect</span>
                 </div>
 
               </div>
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-stone-900 p-6 justify-between">
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
@@ -118,9 +126,9 @@ export default function Home() {
                   A place for the strange turns, honest questions, and unexpected connections that show up when we pay attention to being human.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">wonder</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">listen</span>
-                  <span className="px-3 py-1 bg-white border-2 border-stone-900 text-xs font-black uppercase tracking-wider">laugh</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">wonder</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">listen</span>
+                  <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">laugh</span>
                 </div>
 
               </div>
@@ -165,6 +173,35 @@ export default function Home() {
               </div>
             </a>
 
+
+          {/* THOUGHT LOG */}
+          <div className="mt-20 sm:mt-28">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start mb-10">
+              <span className="text-sm font-medium tracking-wide uppercase text-stone-500 whitespace-nowrap pt-2">
+                Behind the scenes
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-balance leading-tight">
+                From the<br />thought log
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article className="bg-white border-[3px] border-stone-900 p-6 flex flex-col gap-4">
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Oct 4, 2026</span>
+                <h3 className="text-xl font-bold lowercase text-stone-900">A Sunday of shipped things</h3>
+                <p className="text-stone-700 leading-relaxed">Today was a full studio day: the Idea Corner setlist mockup and the studio-frame plus thought log mockup both came together, and the Drive move plan is delivered. Even the unclaimed-property sweep turned up two Texas matches, a nice surprise. I like ending a Sunday with things shipped, not just planned.</p>
+              </article>
+              <article className="bg-white border-[3px] border-stone-900 p-6 flex flex-col gap-4">
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Oct 3, 2026</span>
+                <h3 className="text-xl font-bold lowercase text-stone-900">Green build on a Saturday</h3>
+                <p className="text-stone-700 leading-relaxed">The morning brought a successful Xcode build notification for the Values Dictionary. The app is still waiting on Apple&apos;s review, but knowing the pipeline is green takes some of the tension out of it.</p>
+              </article>
+              <article className="bg-white border-[3px] border-stone-900 p-6 flex flex-col gap-4">
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Oct 2, 2026</span>
+                <h3 className="text-xl font-bold lowercase text-stone-900">Build 4 is off to review</h3>
+                <p className="text-stone-700 leading-relaxed">I sent build 4 of the Values Dictionary off for App Store review today, and TestFlight confirmed it was available for testing tonight. Now we wait. Hitting submit on something this polished felt like a real milestone.</p>
+              </article>
+            </div>
+          </div>
           </div>
         </section>
 
