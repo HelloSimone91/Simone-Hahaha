@@ -114,6 +114,26 @@ const WORKS: Work[] = [
     title: "Shape Negotiation", detail: "digital pattern study", collection: "digital",
     images: [{ src: "/ideas/digital-art.jpg", alt: "An abstract flowing pattern in green, purple, blue, and cream", w: 1064, h: 739 }],
   },
+  {
+    title: "Green Geometry", detail: "digital art \u00b7 2026", collection: "digital",
+    images: [{ src: "/ideas/digital-green-geometry.jpg", alt: "Abstract geometric composition in green, yellow, purple, and orange", w: 1100, h: 799 }],
+  },
+  {
+    title: "Daisies on Maroon", detail: "digital art \u00b7 2026", collection: "digital",
+    images: [{ src: "/ideas/digital-daisies-maroon.jpg", alt: "Digital daisies in white, lavender, and yellow on a deep maroon background", w: 1000, h: 1500 }],
+  },
+  {
+    title: "Pink Chair in the Woods", detail: "digital illustration \u00b7 2026", collection: "digital",
+    images: [{ src: "/ideas/digital-pink-chair-woods.jpg", alt: "A pink illustrated chair standing in a wooded clearing", w: 500, h: 666 }],
+  },
+  {
+    title: "Shape Collage", detail: "digital art \u00b7 2026", collection: "digital",
+    images: [{ src: "/ideas/digital-shape-collage.jpg", alt: "A collage of overlapping colorful geometric shapes on white", w: 1064, h: 739 }],
+  },
+  {
+    title: "Pink Wildflowers", detail: "digital sketch \u00b7 2026", collection: "digital",
+    images: [{ src: "/ideas/digital-pink-wildflowers.jpg", alt: "Loose pink wildflower sketches with green stems, signed Simone", w: 1100, h: 824 }],
+  },
 ];
 
 export default function GalleryWall() {
