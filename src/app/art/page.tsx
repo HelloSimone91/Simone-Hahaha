@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import IdeaPalettePicker from "@/components/IdeaPalettePicker";
-import PortfolioArchive from "@/components/PortfolioArchive";
+import GalleryWall from "@/components/GalleryWall";
 
 export default function ArtPage() {
   return (
@@ -8,7 +8,7 @@ export default function ArtPage() {
       <Header />
       <main className="ideas-page">
         <IdeaPalettePicker />
-        <PortfolioArchive />
+        <GalleryWall />
       </main>
     </div>
   );
