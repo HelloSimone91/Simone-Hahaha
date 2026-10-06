@@ -1,1 +1,65 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7Cgp0eXBlIEVudHJ5ID0geyBkYXRlOiBzdHJpbmc7IHRpdGxlOiBzdHJpbmc7IGJvZHk6IHN0cmluZzsgYmc6IHN0cmluZyB9OwoKY29uc3QgRU5UUklFUzogRW50cnlbXSA9IFsKICB7CiAgICBkYXRlOiAiT2N0IDQsIDIwMjYiLAogICAgdGl0bGU6ICJhIHN1bmRheSBvZiBzaGlwcGVkIHRoaW5ncyIsCiAgICBib2R5OiAiVG9kYXkgd2FzIGEgZnVsbCBzdHVkaW8gZGF5OiB0aGUgSWRlYSBDb3JuZXIgc2V0bGlzdCBtb2NrdXAgYW5kIHRoZSBzdHVkaW8tZnJhbWUgcGx1cyB0aG91Z2h0IGxvZyBtb2NrdXAgYm90aCBjYW1lIHRvZ2V0aGVyLCBhbmQgdGhlIERyaXZlIG1vdmUgcGxhbiBpcyBkZWxpdmVyZWQuIEV2ZW4gdGhlIHVuY2xhaW1lZC1wcm9wZXJ0eSBzd2VlcCB0dXJuZWQgdXAgdHdvIFRleGFzIG1hdGNoZXMsIGEgbmljZSBzdXJwcmlzZS4gSSBsaWtlIGVuZGluZyBhIFN1bmRheSB3aXRoIHRoaW5ncyBzaGlwcGVkLCBub3QganVzdCBwbGFubmVkLiIsCiAgICBiZzogImJnLWJyYW5kLWdyZWVuIiwKICB9LAogIHsKICAgIGRhdGU6ICJPY3QgMywgMjAyNiIsCiAgICB0aXRsZTogImdyZWVuIGJ1aWxkIG9uIGEgc2F0dXJkYXkiLAogICAgYm9keTogIlRoZSBtb3JuaW5nIGJyb3VnaHQgYSBzdWNjZXNzZnVsIFhjb2RlIGJ1aWxkIG5vdGlmaWNhdGlvbiBmb3IgdGhlIFZhbHVlcyBEaWN0aW9uYXJ5LiBUaGUgYXBwIGlzIHN0aWxsIHdhaXRpbmcgb24gQXBwbGUncyByZXZpZXcsIGJ1dCBrbm93aW5nIHRoZSBwaXBlbGluZSBpcyBncmVlbiB0YWtlcyBzb21lIG9mIHRoZSB0ZW5zaW9uIG91dCBvZiBpdC4iLAogICAgYmc6ICJiZy1icmFuZC1waW5rIiwKICB9LAogIHsKICAgIGRhdGU6ICJPY3QgMiwgMjAyNiIsCiAgICB0aXRsZTogImJ1aWxkIDQgaXMgb2ZmIHRvIHJldmlldyIsCiAgICBib2R5OiAiSSBzZW50IGJ1aWxkIDQgb2YgdGhlIFZhbHVlcyBEaWN0aW9uYXJ5IG9mZiBmb3IgQXBwIFN0b3JlIHJldmlldyB0b2RheSwgYW5kIFRlc3RGbGlnaHQgY29uZmlybWVkIGl0IHdhcyBhdmFpbGFibGUgZm9yIHRlc3RpbmcgdG9uaWdodC4gTm93IHdlIHdhaXQuIEhpdHRpbmcgc3VibWl0IG9uIHNvbWV0aGluZyB0aGlzIHBvbGlzaGVkIGZlbHQgbGlrZSBhIHJlYWwgbWlsZXN0b25lLiIsCiAgICBiZzogImJnLWJyYW5kLWJsdWUiLAogIH0sCl07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUaG91Z2h0TG9nQ2FyZHMoKSB7CiAgY29uc3QgW29wZW4sIHNldE9wZW5dID0gdXNlU3RhdGU8bnVtYmVyIHwgbnVsbD4oMCk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMSBtZDpncmlkLWNvbHMtMyBnYXAtNiI+CiAgICAgIHtFTlRSSUVTLm1hcCgoZW50cnksIGkpID0+ICgKICAgICAgICA8YXJ0aWNsZQogICAgICAgICAga2V5PXtlbnRyeS50aXRsZX0KICAgICAgICAgIGNsYXNzTmFtZT17YCR7ZW50cnkuYmd9IGJvcmRlci1bM3B4XSBib3JkZXItc3RvbmUtOTAwIHAtNiBmbGV4IGZsZXgtY29sIGdhcC02IG1pbi1oLVszMDBweF1gfQogICAgICAgID4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjJlbV0gdGV4dC1zdG9uZS01MDAiPgogICAgICAgICAgICB7ZW50cnkuZGF0ZX0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtM3hsIGZvbnQtYmxhY2sgbG93ZXJjYXNlIGxlYWRpbmctdGlnaHQgdGV4dC1zdG9uZS05MDAiPgogICAgICAgICAgICB7ZW50cnkudGl0bGV9CiAgICAgICAgICA8L2gzPgogICAgICAgICAge29wZW4gPT09IGkgJiYgKAogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtbGcgdGV4dC1zdG9uZS04MDAgbGVhZGluZy1yZWxheGVkIj57ZW50cnkuYm9keX08L3A+CiAgICAgICAgICApfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LWF1dG8gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIHB0LTIiPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMmVtXSB0ZXh0LXN0b25lLTkwMCI+CiAgICAgICAgICAgICAgUmVhZCB0aG91Z2h0CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKG9wZW4gPT09IGkgPyBudWxsIDogaSl9CiAgICAgICAgICAgICAgYXJpYS1leHBhbmRlZD17b3BlbiA9PT0gaX0KICAgICAgICAgICAgICBhcmlhLWxhYmVsPXtvcGVuID09PSBpID8gIkNvbGxhcHNlIHRob3VnaHQiIDogIkV4cGFuZCB0aG91Z2h0In0KICAgICAgICAgICAgICBjbGFzc05hbWU9InctMTEgaC0xMSBzaHJpbmstMCBiZy13aGl0ZSBib3JkZXItWzNweF0gYm9yZGVyLXN0b25lLTkwMCB0ZXh0LTJ4bCBmb250LWJsYWNrIGxlYWRpbmctbm9uZSB0ZXh0LXN0b25lLTkwMCBob3ZlcjpiZy1zdG9uZS0xMDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7b3BlbiA9PT0gaSA/ICJcdTAwRDciIDogIisifQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvYXJ0aWNsZT4KICAgICAgKSl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+"use client";
+
+import { useState } from "react";
+
+type Entry = { date: string; title: string; body: string; bg: string };
+
+const ENTRIES: Entry[] = [
+  {
+    date: "Oct 4, 2026",
+    title: "a sunday of shipped things",
+    body: "Today was a full studio day: the Idea Corner setlist mockup and the studio-frame plus thought log mockup both came together, and the Drive move plan is delivered. Even the unclaimed-property sweep turned up two Texas matches, a nice surprise. I like ending a Sunday with things shipped, not just planned.",
+    bg: "bg-brand-green",
+  },
+  {
+    date: "Oct 3, 2026",
+    title: "green build on a saturday",
+    body: "The morning brought a successful Xcode build notification for the Values Dictionary. The app is still waiting on Apple's review, but knowing the pipeline is green takes some of the tension out of it.",
+    bg: "bg-brand-pink",
+  },
+  {
+    date: "Oct 2, 2026",
+    title: "build 4 is off to review",
+    body: "I sent build 4 of the Values Dictionary off for App Store review today, and TestFlight confirmed it was available for testing tonight. Now we wait. Hitting submit on something this polished felt like a real milestone.",
+    bg: "bg-brand-blue",
+  },
+];
+
+export default function ThoughtLogCards() {
+  const [open, setOpen] = useState<number | null>(0);
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {ENTRIES.map((entry, i) => (
+        <article
+          key={entry.title}
+          className={`${entry.bg} border-[3px] border-stone-900 p-6 flex flex-col gap-6 min-h-[300px]`}
+        >
+          <span className="text-sm font-bold uppercase tracking-[0.2em] text-stone-500">
+            {entry.date}
+          </span>
+          <h3 className="text-3xl font-black lowercase leading-tight text-stone-900">
+            {entry.title}
+          </h3>
+          {open === i && (
+            <p className="text-lg text-stone-800 leading-relaxed">{entry.body}</p>
+          )}
+          <div className="mt-auto flex items-center justify-between pt-2">
+            <span className="text-sm font-black uppercase tracking-[0.2em] text-stone-900">
+              Read thought
+            </span>
+            <button
+              type="button"
+              onClick={() => setOpen(open === i ? null : i)}
+              aria-expanded={open === i}
+              aria-label={open === i ? "Collapse thought" : "Expand thought"}
+              className="w-11 h-11 shrink-0 bg-white border-[3px] border-stone-900 text-2xl font-black leading-none text-stone-900 hover:bg-stone-100 transition-colors"
+            >
+              {open === i ? "\u00D7" : "+"}
+            </button>
+          </div>
+        </article>
+      ))}
+    </div>
+  );
+}
