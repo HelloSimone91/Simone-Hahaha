@@ -125,6 +125,11 @@ const portfolioCollections = [
     tone: "rose",
     works: [
       {
+        title: "Whimsical Summer Dust",
+        detail: "digital art · 2023",
+        images: [["/ideas/whimsical-summer-dust-2023.jpeg", "An abstract digital drawing of flowing botanical shapes and circles in lavender, green, aqua, and yellow on a blue-gray background", 1353, 1091]],
+      },
+      {
         title: "Soft Constellation",
         detail: "iPad doodles · 2026",
         images: [["/ideas/soft-constellation.jpg", "A loose constellation of lavender and orange flower doodles", 739, 1064]],
