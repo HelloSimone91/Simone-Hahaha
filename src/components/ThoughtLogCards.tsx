@@ -53,9 +53,31 @@ export default function ThoughtLogCards() {
               onClick={() => setOpen(open === i ? null : i)}
               aria-expanded={open === i}
               aria-label={open === i ? "Collapse thought" : "Expand thought"}
-              className="w-11 h-11 shrink-0 bg-white border-[3px] border-stone-900 text-2xl font-black leading-none text-stone-900 hover:bg-stone-100 transition-colors"
+              className="w-11 h-11 shrink-0 bg-white border-[3px] border-stone-900 text-stone-900 hover:bg-stone-100 transition-colors grid place-items-center"
             >
-              {open === i ? "\u00D7" : "+"}
+              <span className="relative block w-6 h-6" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  className={`absolute inset-0 transition-all duration-300 ${open === i ? "opacity-0 rotate-90 scale-75" : "opacity-100 rotate-0 scale-100"}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={3}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="5 9 12 16 19 9" />
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  className={`absolute inset-0 transition-all duration-300 ${open === i ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-75"}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={3}
+                  strokeLinecap="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </span>
             </button>
           </div>
         </article>
