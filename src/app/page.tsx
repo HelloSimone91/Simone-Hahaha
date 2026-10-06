@@ -70,15 +70,18 @@ export default function Home() {
           <div className="hidden lg:grid lg:grid-cols-6 gap-6">
 
             {/* SIGNAL + FORM UMBRELLA */}
-            <div className="lg:col-span-6 bg-brand-plum p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16">
+            <a href="https://signalandformmedia.com" className="lg:col-span-6 bg-brand-plum p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16 group">
               <div className="flex flex-col gap-4 flex-1">
                 <h3 className="text-4xl sm:text-5xl font-black lowercase text-[#f5f0db] leading-none">signal + form</h3>
                 <p className="text-lg sm:text-xl text-[#f5f0db]/85 font-medium leading-relaxed max-w-3xl">
                   The studio behind all of these branches — media, tools, objects, and experiments for values-led living.
                 </p>
               </div>
-              <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#f5f0db]/70 whitespace-nowrap">the studio umbrella</span>
-            </div>
+              <span className="flex flex-col items-start lg:items-end gap-2">
+                <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#f5f0db]/70 whitespace-nowrap">the studio umbrella</span>
+                <span className="text-sm font-black uppercase tracking-[0.2em] text-[#f5f0db] underline underline-offset-4 decoration-2 group-hover:decoration-4">signalandformmedia.com &rarr;</span>
+              </span>
+            </a>
 
             {/* Project 1 */}
             <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between">
