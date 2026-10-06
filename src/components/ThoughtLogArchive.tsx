@@ -7,8 +7,8 @@ type Entry = { date: string; title: string; log: string };
 const ENTRIES: Entry[] = [
   {
     "date": "2026-10-01",
-    "title": "Checked in after Madeline’s first day",
-    "log": "Madeline’s first report from work was honest and funny: immediate regret, followed by a plan to return. Sometimes consistency starts before confidence does."
+    "title": "Checked in after a first day",
+    "log": "The first report from work was honest and funny: immediate regret, followed by a plan to return. Sometimes consistency starts before confidence does."
   },
   {
     "date": "2026-10-01",
@@ -17,8 +17,8 @@ const ENTRIES: Entry[] = [
   },
   {
     "date": "2026-09-30",
-    "title": "Cheered Madeline into her first day",
-    "log": "I remembered Madeline’s first day and reached out before it began. Care can be very small and still arrive at the exact right time."
+    "title": "Cheered someone into their first day",
+    "log": "I remembered a first day and reached out before it began. Care can be very small and still arrive at the exact right time."
   },
   {
     "date": "2026-09-29",
@@ -87,12 +87,12 @@ const ENTRIES: Entry[] = [
   },
   {
     "date": "2026-09-15",
-    "title": "Fixed up the websites with Jules",
+    "title": "Fixed up the websites",
     "log": "I moved between website fixes, visual work, and checking on the app. My attention was split between making the work better and waiting for an outside system to tell me whether one part of it was allowed through."
   },
   {
     "date": "2026-09-15",
-    "title": "Fixed up the websites with Jules",
+    "title": "Fixed up the websites",
     "log": "I moved between website fixes, visual work, and checking on the app. My attention was split between making the work better and waiting for an outside system to tell me whether one part of it was allowed through."
   },
   {
@@ -127,12 +127,12 @@ const ENTRIES: Entry[] = [
   },
   {
     "date": "2026-09-11",
-    "title": "Worked on valuesinthewild.com and howdyhuman.com with Jules",
+    "title": "Worked on valuesinthewild.com and howdyhuman.com",
     "log": "I worked across the studio sites and tried to make the digital workspace less chaotic around them. The projects were starting to feel like parts of one living system, even if I was still figuring out how to hold all of it."
   },
   {
     "date": "2026-09-11",
-    "title": "Worked on valuesinthewild.com and howdyhuman.com with Jules",
+    "title": "Worked on valuesinthewild.com and howdyhuman.com",
     "log": "I worked across the studio sites and tried to make the digital workspace less chaotic around them. The projects were starting to feel like parts of one living system, even if I was still figuring out how to hold all of it."
   },
   {
@@ -317,8 +317,8 @@ const ENTRIES: Entry[] = [
   },
   {
     "date": "2026-06-29",
-    "title": "Another late night at Frankie’s",
-    "log": "Another night that stretched into the next day at Frankie’s. Friendship often lives in these unplanned hours more than in anything formally scheduled."
+    "title": "Another late night out",
+    "log": "Another night that stretched into the next day with a friend. Friendship often lives in these unplanned hours more than in anything formally scheduled."
   },
   {
     "date": "2026-06-19",
@@ -362,22 +362,22 @@ const ENTRIES: Entry[] = [
   },
   {
     "date": "2026-06-05",
-    "title": "Friday evening with Ivy and Olivia",
-    "log": "The photo I kept from tonight is Ivy and Olivia together. The small family scenes are often the ones I most want time to stop erasing."
+    "title": "Friday evening with family",
+    "log": "The photo I kept from tonight is the kids together. The small family scenes are often the ones I most want time to stop erasing."
   },
   {
     "date": "2026-05-25",
-    "title": "Memorial Day with Ivy",
-    "log": "The holiday was simple: time at Jessica’s with Ivy. A day can be worth keeping without needing a larger story."
+    "title": "Memorial Day",
+    "log": "The holiday was simple: time at my sister’s with the kids. A day can be worth keeping without needing a larger story."
   },
   {
     "date": "2026-05-19",
-    "title": "Late night at Frankie’s",
-    "log": "A late-night photo at Frankie’s is the small marker I have for today. Sometimes the record is not a conclusion, only proof that I was there."
+    "title": "Late night out",
+    "log": "A late-night photo with a friend is the small marker I have for today. Sometimes the record is not a conclusion, only proof that I was there."
   },
   {
     "date": "2026-05-13",
-    "title": "Family evening at Jessica’s",
+    "title": "Family evening",
     "log": "An ordinary evening with family left a small piece of evidence behind: the people I love, together in one frame. Not every meaningful day announces itself."
   }
 ];
