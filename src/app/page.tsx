@@ -73,14 +73,17 @@ export default function Home() {
               <div className="flex flex-col gap-4 flex-1">
                 <h3 className="text-4xl sm:text-5xl font-black lowercase text-[#f5f0db] leading-none">signal + form</h3>
                 <p className="text-lg sm:text-xl text-[#f5f0db]/85 font-medium leading-relaxed max-w-3xl">
-                  The larger studio behind these three branches: media, tools, and experiments for values-led living.
+                  The studio behind all of these branches — media, tools, objects, and experiments for values-led living.
                 </p>
               </div>
-              <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#f5f0db]/70 whitespace-nowrap">Studio umbrella / 01&ndash;03</span>
+              <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#f5f0db]/70 whitespace-nowrap">the studio umbrella</span>
             </div>
 
+            {/* MOBILE PANELS: horizontal snap-scroll row (grid on lg) */}
+            <div className="lg:col-span-6 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 lg:pb-0 lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-visible lg:snap-none no-scrollbar">
+
             {/* Project 1 */}
-            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="min-w-[85%] sm:min-w-[55%] snap-center shrink-0 lg:min-w-0 lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
@@ -100,7 +103,7 @@ export default function Home() {
             </a>
 
             {/* Project 2 */}
-            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="min-w-[85%] sm:min-w-[55%] snap-center shrink-0 lg:min-w-0 lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
@@ -120,7 +123,7 @@ export default function Home() {
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="min-w-[85%] sm:min-w-[55%] snap-center shrink-0 lg:min-w-0 lg:col-span-2 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
@@ -139,14 +142,19 @@ export default function Home() {
               </div>
             </a>
 
+            </div>
+
             {/* PERSONAL WORK DIVIDER */}
             <div className="lg:col-span-6 flex items-center gap-6 mt-2">
               <span className="text-sm font-bold uppercase tracking-[0.2em] text-stone-500 whitespace-nowrap">Personal work</span>
               <span className="flex-1 h-[3px] bg-stone-900" aria-hidden="true" />
             </div>
 
+            {/* MOBILE PANELS: art + ideas side-by-side scroll (grid on lg) */}
+            <div className="lg:col-span-6 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 lg:pb-0 lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-visible lg:snap-none no-scrollbar">
+
             {/* Project 4 */}
-            <a href="/art.html" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-[#eaac8b] border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/art.html" className="min-w-[85%] sm:min-w-[55%] snap-center shrink-0 lg:min-w-0 lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-[#eaac8b] border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">04</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-600">Objects / paintings / drawings</span>
@@ -165,7 +173,7 @@ export default function Home() {
             </a>
 
             {/* Project 5 */}
-            <a href="/ideas.html" id="ideas" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/ideas.html" id="ideas" className="min-w-[85%] sm:min-w-[55%] snap-center shrink-0 lg:min-w-0 lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">05+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / unfinished things</span>
@@ -184,6 +192,8 @@ export default function Home() {
               </div>
             </a>
 
+
+            </div>
 
           {/* THOUGHT LOG */}
           <div className="mt-20 sm:mt-28">
