@@ -196,3 +196,7 @@ body {
 @media(max-width:500px){.idea-corner-page{width:min(calc(100% - 22px),440px)}.idea-filters button{padding:8px 11px 7px;font-size:.67rem}.corner-idea-toggle{grid-template-columns:30px minmax(0,1fr) 26px;gap:7px}.corner-idea-copy strong{font-size:1.62rem}.corner-panel-inner{padding-left:0}.corner-sheet{padding:14px}.corner-sheet-grid{grid-template-columns:1fr;gap:7px}.corner-block{min-height:0}.corner-sheet figcaption{flex-direction:column;gap:2px}}
 @media(prefers-color-scheme:dark){.idea-corner-shell{--corner-bg:#171616;--corner-paper:#201f1e;--corner-ink:#f5efe5;--corner-muted:#bbb4aa;--corner-line:#55504a;--corner-chip:#292725;--corner-hot:#ff7956;--corner-problem:#9f5b71;--corner-concept:#4e7f98;--corner-which:#76629e;--corner-need:#668b5a}.corner-block{color:#fffaf2}}
 @media(prefers-reduced-motion:reduce){.idea-corner-shell *,.idea-corner-shell *::before,.idea-corner-shell *::after{transition:none!important}}
+
+/* Hide scrollbars on mobile panel rows while keeping swipe */
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{scrollbar-width:none;-ms-overflow-style:none}
