@@ -164,7 +164,10 @@ export default function WorkPanels() {
   return (
     <div className="border-t-[3px] border-brand-plum">
       {/* Mobile umbrella banner */}
-      <div className="bg-brand-plum px-6 py-8 border-b-[3px] border-brand-plum">
+      <a
+        href="https://signalandformmedia.com"
+        className="block bg-brand-plum px-6 py-8 border-b-[3px] border-brand-plum"
+      >
         <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f5f0db]/70">
           the studio umbrella
         </span>
@@ -175,7 +178,10 @@ export default function WorkPanels() {
           The studio behind all of these branches &mdash; media, tools, objects,
           and experiments for values-led living.
         </p>
-      </div>
+        <span className="mt-4 inline-block text-sm font-black uppercase tracking-[0.2em] text-[#f5f0db] underline underline-offset-4 decoration-2">
+          signalandformmedia.com &rarr;
+        </span>
+      </a>
 
       {BRANCHES.map((p) => (
         <PanelRow
