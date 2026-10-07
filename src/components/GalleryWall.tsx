@@ -138,13 +138,16 @@ const WORKS: Work[] = [
 
 export default function GalleryWall() {
   const [filter, setFilter] = useState<"all" | CollectionKey>("all");
-  const [lightbox, setLightbox] = useState<{ work: number; img: number } | null>(null);
+  const [lightbox, setLightbox] = useState<number | null>(null); // index into slides
   const gridRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
   const mouse = useRef({ x: 0, y: 0, inside: false, overCard: false });
   const scales = useRef<number[]>([]);
 
   const visible = filter === "all" ? WORKS : WORKS.filter((w) => w.collection === filter);
+
+  // Flattened photo lineup: every photo is its own step in the viewer
+  const slides = visible.flatMap((work, wi) => work.images.map((_, ii) => ({ work: wi, img: ii })));
 
   useEffect(() => {
     scales.current = [];
@@ -198,41 +201,33 @@ export default function GalleryWall() {
 
   // Lightbox keyboard + scroll lock
   useEffect(() => {
-    if (!lightbox) return;
+    if (lightbox === null) return;
     document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setLightbox(null);
-      if (e.key === "ArrowRight") nextWork();
-      if (e.key === "ArrowLeft") prevWork();
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
     };
     window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKey);
     };
-  }, [lightbox, visible.length]);
+  }, [lightbox, slides.length]);
 
-  const openAt = (i: number) => setLightbox({ work: i, img: 0 });
+  const openAt = (i: number) => {
+    const s = slides.findIndex((sl) => sl.work === i);
+    if (s >= 0) setLightbox(s);
+  };
   const close = () => setLightbox(null);
-  const nextWork = () =>
-    setLightbox((lb) => (lb ? { work: (lb.work + 1) % visible.length, img: 0 } : lb));
-  const prevWork = () =>
-    setLightbox((lb) => (lb ? { work: (lb.work - 1 + visible.length) % visible.length, img: 0 } : lb));
-  const nextImg = () =>
-    setLightbox((lb) => {
-      if (!lb) return lb;
-      const imgs = visible[lb.work].images.length;
-      return { work: lb.work, img: (lb.img + 1) % imgs };
-    });
-  const prevImg = () =>
-    setLightbox((lb) => {
-      if (!lb) return lb;
-      const imgs = visible[lb.work].images.length;
-      return { work: lb.work, img: (lb.img - 1 + imgs) % imgs };
-    });
+  const nextSlide = () =>
+    setLightbox((lb) => (lb === null ? lb : (lb + 1) % slides.length));
+  const prevSlide = () =>
+    setLightbox((lb) => (lb === null ? lb : (lb - 1 + slides.length) % slides.length));
 
-  const current = lightbox ? visible[lightbox.work] : null;
-  const currentImg = current ? current.images[lightbox!.img] : null;
+  const slide = lightbox === null ? null : slides[lightbox];
+  const current = slide ? visible[slide.work] : null;
+  const currentImg = slide && current ? current.images[slide.img] : null;
 
   return (
     <section className="gallery-wall" aria-label="Artwork gallery">
@@ -361,7 +356,7 @@ export default function GalleryWall() {
       </div>
 
       {/* Lightbox carousel */}
-      {lightbox && current && currentImg && (
+      {lightbox !== null && current && currentImg && (
         <div
           className="fixed inset-0 z-[100] bg-stone-950/95 flex flex-col"
           role="dialog"
@@ -371,11 +366,11 @@ export default function GalleryWall() {
         >
           {/* Story progress bar (mobile) */}
           <div className="md:hidden flex gap-1.5 px-4 pt-4" aria-hidden="true">
-            {visible.map((_, i) => (
+            {slides.map((_, i) => (
               <span
                 key={i}
                 className="story-bar h-1 flex-1 rounded-full"
-                style={{ backgroundColor: i === lightbox.work ? "#f5f0db" : "rgba(245,240,219,0.3)" }}
+                style={{ backgroundColor: i === lightbox ? "#f5f0db" : "rgba(245,240,219,0.3)" }}
               />
             ))}
           </div>
@@ -386,7 +381,7 @@ export default function GalleryWall() {
             onClick={(e) => e.stopPropagation()}
           >
             <span className="text-sm font-black uppercase tracking-[0.2em]">
-              {lightbox.work + 1} / {visible.length}
+              {lightbox! + 1} / {slides.length}
             </span>
             <button
               type="button"
@@ -406,16 +401,16 @@ export default function GalleryWall() {
             {/* Desktop arrows */}
             <button
               type="button"
-              onClick={prevWork}
-              aria-label="Previous artwork"
+              onClick={prevSlide}
+              aria-label="Previous photo"
               className="hidden md:grid absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 place-items-center border-[3px] border-[#f5f0db] text-[#f5f0db] text-3xl font-black hover:bg-white/10 z-10"
             >
               ←
             </button>
             <button
               type="button"
-              onClick={nextWork}
-              aria-label="Next artwork"
+              onClick={nextSlide}
+              aria-label="Next photo"
               className="hidden md:grid absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 place-items-center border-[3px] border-[#f5f0db] text-[#f5f0db] text-3xl font-black hover:bg-white/10 z-10"
             >
               →
@@ -424,14 +419,14 @@ export default function GalleryWall() {
             {/* Mobile story tap zones */}
             <button
               type="button"
-              aria-label="Previous artwork"
-              onClick={prevWork}
+              aria-label="Previous photo"
+              onClick={prevSlide}
               className="md:hidden absolute left-0 top-0 bottom-0 w-[30%] z-10"
             />
             <button
               type="button"
-              aria-label="Next artwork"
-              onClick={nextWork}
+              aria-label="Next photo"
+              onClick={nextSlide}
               className="md:hidden absolute right-0 top-0 bottom-0 w-[30%] z-10"
             />
 
@@ -455,38 +450,6 @@ export default function GalleryWall() {
                 {current.description && (
                   <p className="mt-2 text-base text-[#f5f0db]/85">{current.description}</p>
                 )}
-                {current.images.length > 1 && (
-                  <span className="mt-3 flex items-center justify-center gap-2">
-                    <button
-                      type="button"
-                      onClick={prevImg}
-                      aria-label="Previous view"
-                      className="w-8 h-8 grid place-items-center border-2 border-[#f5f0db]/60 text-lg hover:bg-white/10"
-                    >
-                      ←
-                    </button>
-                    <span className="flex gap-1.5">
-                      {current.images.map((_, vi) => (
-                        <button
-                          key={vi}
-                          type="button"
-                          onClick={() => setLightbox({ work: lightbox.work, img: vi })}
-                          aria-label={`View ${vi + 1}`}
-                          className="w-2.5 h-2.5 rounded-full"
-                          style={{ backgroundColor: vi === lightbox.img ? "#f5f0db" : "rgba(245,240,219,0.35)" }}
-                        />
-                      ))}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={nextImg}
-                      aria-label="Next view"
-                      className="w-8 h-8 grid place-items-center border-2 border-[#f5f0db]/60 text-lg hover:bg-white/10"
-                    >
-                      →
-                    </button>
-                  </span>
-                )}
                 {current.href && (
                   <a
                     href={current.href}
@@ -506,15 +469,16 @@ export default function GalleryWall() {
             className="hidden md:flex items-center gap-3 px-8 py-5 overflow-x-auto justify-start sm:justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            {visible.map((w, i) => {
-              const t = w.images[0];
-              const active = i === lightbox.work;
+            {slides.map((sl, i) => {
+              const w = visible[sl.work];
+              const t = w.images[sl.img];
+              const active = i === lightbox;
               return (
                 <button
-                  key={w.title}
+                  key={`${w.title}-${sl.img}`}
                   type="button"
-                  onClick={() => setLightbox({ work: i, img: 0 })}
-                  aria-label={`Go to ${w.title}`}
+                  onClick={() => setLightbox(i)}
+                  aria-label={`Go to ${w.title}${w.images.length > 1 ? `, view ${sl.img + 1}` : ""}`}
                   aria-current={active}
                   className={`relative shrink-0 w-20 h-14 overflow-hidden border-[3px] transition-all ${
                     active ? "border-[#f5f0db] scale-110" : "border-transparent opacity-50 hover:opacity-90"
