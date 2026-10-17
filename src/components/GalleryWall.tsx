@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type MouseEvent as ReactMouseEvent } from "react";
+import StarburstMark from "@/components/StarburstMark";
 import Image from "next/image";
 
 type WorkImage = { src: string; alt: string; w: number; h: number };
@@ -147,6 +148,21 @@ const WORKS: Work[] = [
 export default function GalleryWall() {
   const [filter, setFilter] = useState<"all" | CollectionKey>("all");
   const [lightbox, setLightbox] = useState<number | null>(null); // index into slides
+  const [bursts, setBursts] = useState<{ id: number; x: number; y: number }[]>([]);
+  const burstId = useRef(0);
+  const burstTimeouts = useRef<number[]>([]);
+  useEffect(() => () => { burstTimeouts.current.forEach((t) => window.clearTimeout(t)); }, []);
+  const spawnBurst = (e: ReactMouseEvent) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if ((e.target as HTMLElement).closest?.("[data-card]")) return;
+    const id = ++burstId.current;
+    setBursts((bs) => [...bs.slice(-11), { id, x: e.clientX, y: e.clientY }]);
+    burstTimeouts.current.push(
+      window.setTimeout(() => {
+        setBursts((bs) => bs.filter((b) => b.id !== id));
+      }, 750)
+    );
+  };
   const gridRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
   const mouse = useRef({ x: 0, y: 0, inside: false, overCard: false });
@@ -266,6 +282,20 @@ export default function GalleryWall() {
 
       <div ref={ringRef} className="gallery-lens" aria-hidden="true" />
 
+      {/* Click bursts: a starburst pops where the wall (not a card) is clicked */}
+      {bursts.map((b) => (
+        <span
+          key={b.id}
+          aria-hidden="true"
+          className="pointer-events-none fixed z-[95]"
+          style={{ left: b.x, top: b.y, transform: "translate(-50%, -50%)" }}
+        >
+          <span className="starburst-burst block h-11 w-11 text-stone-900">
+            <StarburstMark />
+          </span>
+        </span>
+      ))}
+
       {/* Header */}
       <header className="px-6 pt-16 sm:pt-24 pb-8 max-w-[1400px] mx-auto w-full">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-stone-500">
@@ -331,6 +361,7 @@ export default function GalleryWall() {
             mouse.current.inside = false;
             mouse.current.overCard = false;
           }}
+          onClick={spawnBurst}
         >
           {visible.map((work, i) => {
             const img = work.images[0];
