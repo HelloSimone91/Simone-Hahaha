@@ -200,3 +200,25 @@ body {
 /* Hide scrollbars on mobile panel rows while keeping swipe */
 .no-scrollbar::-webkit-scrollbar{display:none}
 .no-scrollbar{scrollbar-width:none;-ms-overflow-style:none}
+
+/* Palette switcher on the art page: the palette variables (--p1..--p10) are
+   set on .ideas-page by the palette rules above, but nothing on the art page
+   consumed them, so switching palettes changed nothing visible. These rules
+   wire the art page background, the active filter chips, and the header
+   accent to the chosen palette. */
+.ideas-page[data-palette="twilight"],
+.ideas-page[data-palette="coastal"],
+.ideas-page[data-palette="garden"] {
+  background: color-mix(in srgb, var(--p10) 45%, white);
+}
+.ideas-page[data-palette="twilight"] .gallery-wall button[aria-pressed="true"],
+.ideas-page[data-palette="coastal"] .gallery-wall button[aria-pressed="true"],
+.ideas-page[data-palette="garden"] .gallery-wall button[aria-pressed="true"] {
+  background-color: var(--p4);
+  border-color: var(--p4);
+}
+.ideas-page[data-palette="twilight"] .gallery-wall .text-brand-plum,
+.ideas-page[data-palette="coastal"] .gallery-wall .text-brand-plum,
+.ideas-page[data-palette="garden"] .gallery-wall .text-brand-plum {
+  color: var(--p4);
+}
