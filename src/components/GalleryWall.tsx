@@ -134,6 +134,14 @@ const WORKS: Work[] = [
     title: "Pink Wildflowers", detail: "digital sketch \u00b7 2026", collection: "digital",
     images: [{ src: "/ideas/digital-pink-wildflowers.jpg", alt: "Loose pink wildflower sketches with green stems, signed Simone", w: 1100, h: 824 }],
   },
+  {
+    title: "Watercolor Water Colors", detail: "watercolor and gel pen on watercolor paper \u00b7 2024", collection: "drawings",
+    images: [{ src: "/ideas/watercolor-water-colors-2024.jpg", alt: "Abstract watercolor and gel pen drawing of flowing pink, blue, purple, and green ribbons with scattered circles on watercolor paper", w: 2560, h: 1648 }],
+  },
+  {
+    title: "City Sunset", detail: "paint pen and gel pen on watercolor paper \u00b7 2024", collection: "drawings",
+    images: [{ src: "/ideas/city-sunset-2024.jpg", alt: "Abstract paint pen and gel pen drawing of wavy lines, a setting sun, and geometric shapes in purple, pink, green, and blue on watercolor paper", w: 3320, h: 2874 }],
+  },
 ];
 
 export default function GalleryWall() {
