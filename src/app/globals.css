@@ -218,3 +218,14 @@ body {
 .ideas-page[data-palette]:not([data-palette="original"]) .gallery-wall .text-brand-plum {
   color: var(--p4);
 }
+
+/* Starburst divider: Simone's logo mark, slow-spinning between sections. */
+@keyframes starburst-spin {
+  to { transform: rotate(360deg); }
+}
+.starburst-spin {
+  animation: starburst-spin 36s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .starburst-spin { animation: none; }
+}
