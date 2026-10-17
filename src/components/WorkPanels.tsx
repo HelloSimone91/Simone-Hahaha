@@ -36,8 +36,8 @@ const BRANCHES: Panel[] = [
   },
   {
     name: "howdy human",
-    tagline: "ideas / experiments / useful things",
-    desc: "A home for human-centered experiments: making life more intentional, more livable, and a little less weird to navigate alone.",
+    tagline: "values / definitions / practice",
+    desc: "A dictionary of values, written to turn values into verbs. Look one up when you need words for what matters.",
     tags: ["question", "make", "connect"],
     href: "https://www.howdyhuman.com/",
     external: true,
@@ -46,8 +46,8 @@ const BRANCHES: Panel[] = [
   },
   {
     name: "things get weird",
-    tagline: "stories / curiosity / conversation",
-    desc: "A place for the strange turns, honest questions, and unexpected connections that show up when we pay attention to being human.",
+    tagline: "workbooks / tools / reflection",
+    desc: "Self-collaboration tools and reflection materials, as printable workbooks. Pick the one that fits the question you’re carrying.",
     tags: ["wonder", "listen", "laugh"],
     href: "https://www.thingsgetweird.com/",
     external: true,
