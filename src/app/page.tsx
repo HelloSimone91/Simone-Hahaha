@@ -132,7 +132,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Howdy Human</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A home for human-centered experiments: making life more intentional, more livable, and a little less weird to navigate alone.
+                  A dictionary of values, written to turn values into verbs. Look one up when you need words for what matters.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">question</span>
@@ -152,7 +152,7 @@ export default function Home() {
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Things Get Weird</h3>
                 <p className="text-lg sm:text-xl text-stone-700 leading-relaxed text-balance">
-                  A place for the strange turns, honest questions, and unexpected connections that show up when we pay attention to being human.
+                  Self-collaboration tools and reflection materials, as printable workbooks. Pick the one that fits the question you’re carrying.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white border-2 border-brand-plum text-xs font-black uppercase tracking-wider">wonder</span>
