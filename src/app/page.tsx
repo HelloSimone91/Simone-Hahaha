@@ -127,7 +127,7 @@ export default function Home() {
             <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
-                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / useful things</span>
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Values / definitions / practice</span>
               </div>
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Howdy Human</h3>
@@ -147,7 +147,7 @@ export default function Home() {
             <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between">
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">04</span>
-                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Stories / curiosity / conversation</span>
+                <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Workbooks / tools / reflection</span>
               </div>
               <div className="w-full flex flex-col gap-6 flex-1">
                 <h3 className="text-3xl sm:text-4xl font-bold lowercase font-black text-stone-900 leading-none">Things Get Weird</h3>
