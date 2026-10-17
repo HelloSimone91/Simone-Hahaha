@@ -4,6 +4,7 @@ import ThoughtLogArchive from "@/components/ThoughtLogArchive";
 import ThoughtLogCards from "@/components/ThoughtLogCards";
 import WorkPanels from "@/components/WorkPanels";
 import StarburstDivider from "@/components/StarburstDivider";
+import StarburstMark from "@/components/StarburstMark";
 
 export default function Home() {
   return (
@@ -85,7 +86,10 @@ export default function Home() {
             </a>
 
             {/* Project 1 */}
-            <a href="https://apps.apple.com/app/values-dictionary/id6816215526" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://apps.apple.com/app/values-dictionary/id6816215526" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-brand-plum p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">01</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Free app / iOS / daily practice</span>
@@ -105,7 +109,10 @@ export default function Home() {
             </a>
 
             {/* Project 2 */}
-            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.valuesinthewild.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-green border-[3px] border-brand-plum p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">02</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Living philosophy / daily practice</span>
@@ -125,7 +132,10 @@ export default function Home() {
             </a>
 
             {/* Project 3 */}
-            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.howdyhuman.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-pink border-[3px] border-brand-plum p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">03</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Values / definitions / practice</span>
@@ -145,7 +155,10 @@ export default function Home() {
             </a>
 
             {/* Project 4 */}
-            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between">
+            <a href="https://www.thingsgetweird.com/" target="_blank" rel="noopener noreferrer" className="lg:col-span-3 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_var(--brand-plum)] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-blue border-[3px] border-brand-plum p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">04</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Workbooks / tools / reflection</span>
@@ -171,7 +184,10 @@ export default function Home() {
             </div>
 
             {/* Project 5 */}
-            <a href="/art.html" className="lg:col-span-6 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-[#eaac8b] border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/art.html" className="lg:col-span-6 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-[#eaac8b] border-[3px] border-stone-900 p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">05</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-600">Objects / paintings / drawings</span>
@@ -190,7 +206,10 @@ export default function Home() {
             </a>
 
             {/* Project 6 */}
-            <a href="/ideas.html" id="ideas" className="lg:col-span-6 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between">
+            <a href="/ideas.html" id="ideas" className="lg:col-span-6 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[12px_12px_0_0_#1a1a1a] transition-all cursor-pointer flex flex-col gap-6 items-start group h-full bg-brand-yellow border-[3px] border-stone-900 p-6 justify-between relative">
+              <span aria-hidden="true" className="card-bloom absolute top-4 right-4 block h-6 w-6 text-stone-900">
+                <StarburstMark />
+              </span>
               <div className="w-full flex flex-col gap-2">
                 <span className="text-stone-900 font-mono font-bold text-lg">06+</span>
                 <span className="text-sm font-medium uppercase tracking-wide text-stone-500">Ideas / experiments / unfinished things</span>
