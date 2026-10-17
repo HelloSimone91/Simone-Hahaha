@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import IdeaPalettePicker from "@/components/IdeaPalettePicker";
 import GalleryWall from "@/components/GalleryWall";
+import StarburstDivider from "@/components/StarburstDivider";
 
 export default function ArtPage() {
   return (
@@ -8,6 +9,7 @@ export default function ArtPage() {
       <Header />
       <main className="ideas-page">
         <IdeaPalettePicker />
+        <StarburstDivider />
         <GalleryWall />
       </main>
     </div>
