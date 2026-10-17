@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import ThoughtLogArchive from "@/components/ThoughtLogArchive";
 import ThoughtLogCards from "@/components/ThoughtLogCards";
 import WorkPanels from "@/components/WorkPanels";
+import StarburstDivider from "@/components/StarburstDivider";
 
 export default function Home() {
   return (
@@ -233,6 +234,8 @@ export default function Home() {
             <ThoughtLogArchive />
           </div>
         </section>
+
+        <StarburstDivider />
 
         {/* PHILOSOPHY SECTION */}
         <section className="bg-brand-yellow/30 py-24 sm:py-32 px-6">
