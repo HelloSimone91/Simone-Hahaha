@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import StarburstDivider from "@/components/StarburstDivider";
 import { ideaPartyItems } from "./ideaPartyData";
 
 const filters = ["all","favorite","product","tech","song","question","business"];
@@ -12,6 +13,7 @@ export default function IdeasPage() {
   return <div className="idea-corner-shell"><Header /><main className="idea-corner-page">
     <header className="idea-corner-intro"><h1>idea<br />corner</h1><p>art, odd questions, useful systems, and ideas with their shoes untied.</p></header>
     <nav className="idea-filters" aria-label="filter ideas">{filters.map(item => <button key={item} type="button" aria-pressed={filter===item} onClick={()=>setFilter(item)}>{item}</button>)}</nav>
+    <StarburstDivider />
     <section className="idea-corner-list" aria-label="ideas from Idea Party">{ideaPartyItems.map((idea,index)=>{
       const visible=filter==="all"||idea.tags.includes(filter); const expanded=openIdea===index; const sheet=idea.sheet;
       return <article className="corner-idea" key={idea.title} hidden={!visible}>
