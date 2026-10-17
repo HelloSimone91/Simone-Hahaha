@@ -239,3 +239,9 @@ body {
 .starburst-burst {
   animation: starburst-burst 0.7s ease-out forwards;
 }
+
+/* Hover bloom on homepage cards: the logo mark grows and turns when its card is hovered. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card-bloom { transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+  .group:hover .card-bloom { transform: scale(1.3) rotate(14deg); }
+}
