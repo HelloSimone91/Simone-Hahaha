@@ -30,7 +30,7 @@ export default function IdeaPalettePicker() {
 
   return (
     <div className="palette-picker" ref={pickerRef}>
-      <label htmlFor="idea-palette">color palette</label>
+      <label htmlFor="idea-palette">palette switcher</label>
       <div className="palette-control">
         <span className="palette-swatches" aria-hidden="true">
           {palettes.find(({ id }) => id === palette)?.colors.map((color) => (
